@@ -8,7 +8,6 @@ Follow these instructions to install the app and run it with the mock (in-memory
 
 1. **Make sure you have the latest version of Cordova and Ionic:**
     ```
-    npm install -g npm
     npm install -g cordova
     npm install -g ionic
     ```
