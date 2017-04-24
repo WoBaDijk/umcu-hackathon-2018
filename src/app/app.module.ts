@@ -12,8 +12,8 @@ import {BrokerDetailPage} from '../pages/broker-detail/broker-detail';
 import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
 import {AboutPage} from '../pages/about/about';
 
-import {PropertyService} from "../providers/property-service-rest";
-import {BrokerService} from "../providers/broker-service-rest";
+import {PropertyService} from "../providers/property-service-mock";
+import {BrokerService} from "../providers/broker-service-mock";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
