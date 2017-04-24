@@ -1,4 +1,4 @@
-let properties = [
+let properties: Array<any> = [
     {
         id: 1,
         address: "18 Henry st",
@@ -11,8 +11,8 @@ let properties = [
         bathrooms: 3,
         long: -71.11095,
         lat: 42.35663,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house01.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house01sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house01.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house01sq.jpg",
         tags: "colonial",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -34,8 +34,8 @@ let properties = [
         bathrooms: 4,
         long: -71.10869,
         lat: 42.359103,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house02.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house02sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house02.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house02sq.jpg",
         tags: "colonial",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -57,8 +57,8 @@ let properties = [
         bathrooms: 4,
         long: -71.070061,
         lat: 42.359986,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house03.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house03sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house03.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house03sq.jpg",
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -80,8 +80,8 @@ let properties = [
         bathrooms: 4,
         long: -71.110448,
         lat: 42.360642,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house04.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house04sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house04.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house04sq.jpg",
         tags: "victorian",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -103,8 +103,8 @@ let properties = [
         bathrooms: 2,
         long: -71.084454,
         lat: 42.368168,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house05.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house05sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house05.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house05sq.jpg",
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -126,8 +126,8 @@ let properties = [
         bathrooms: 2,
         long: -71.052617,
         lat: 42.366855,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house06.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house06sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house06.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house06sq.jpg",
         tags: "colonial",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -149,8 +149,8 @@ let properties = [
         bathrooms: 1,
         long: -71.057352,
         lat: 42.365003,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house07.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house07sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house07.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house07sq.jpg",
         tags: "colonial",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -172,8 +172,8 @@ let properties = [
         bathrooms: 4,
         long: -71.121653,
         lat: 42.374117,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house10.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house10sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house10.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house10sq.jpg",
         tags: "victorian",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -195,8 +195,8 @@ let properties = [
         bathrooms: 3,
         long: -71.049327,
         lat: 42.35695,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house09.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house09sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house09.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house09sq.jpg",
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -218,8 +218,8 @@ let properties = [
         bathrooms: 2,
         long: -71.105475,
         lat: 42.347400,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08sq.jpg",
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -241,8 +241,8 @@ let properties = [
         bathrooms: 3,
         lat: 42.349693,
         long: -71.084407,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house11.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house11sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house11.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house11sq.jpg",
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -264,8 +264,8 @@ let properties = [
         bathrooms: 3,
         lat: 42.352466,
         long: -71.075311,
-        pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house12.jpg",
-        thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house12sq.jpg",
+        picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house12.jpg",
+        thumbnail: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house12sq.jpg",
         tags: "colonial",
         description: "Lorem ipsum dolor sit amet",
         broker: {

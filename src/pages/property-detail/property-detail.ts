@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {ActionSheetController, ActionSheet, NavController, NavParams, ToastController} from 'ionic-angular';
 import {BrokerDetailPage} from '../broker-detail/broker-detail';
-import {PropertyService} from '../../providers/property-service-mock';
+import {PropertyService} from '../../providers/property-service-rest';
 
 @Component({
     selector: 'page-property-detail',
@@ -44,7 +44,7 @@ export class PropertyDetailPage {
                 },
                 {
                     text: 'Facebook',
-                    handler: () => console.log('share via twitter')
+                    handler: () => console.log('share via facebook')
                 },
                 {
                     text: 'Email',

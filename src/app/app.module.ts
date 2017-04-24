@@ -1,7 +1,9 @@
-import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
-import { MyApp } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
+import { MyApp } from './app.component';
 import {WelcomePage} from '../pages/welcome/welcome';
 import {PropertyListPage} from '../pages/property-list/property-list';
 import {PropertyDetailPage} from '../pages/property-detail/property-detail';
@@ -10,9 +12,11 @@ import {BrokerDetailPage} from '../pages/broker-detail/broker-detail';
 import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
 import {AboutPage} from '../pages/about/about';
 
-import { PropertyService } from "../providers/property-service-mock";
-import { BrokerService } from "../providers/broker-service-mock";
+import {PropertyService} from "../providers/property-service-rest";
+import {BrokerService} from "../providers/broker-service-rest";
 
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { BrokerService } from "../providers/broker-service-mock";
     BrokerDetailPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    BrowserModule,
+    HttpModule,
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -39,6 +45,12 @@ import { BrokerService } from "../providers/broker-service-mock";
     BrokerListPage,
     BrokerDetailPage
   ],
-  providers: [PropertyService, BrokerService]
+  providers: [
+    StatusBar,
+    SplashScreen,
+    PropertyService,
+    BrokerService,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
 })
 export class AppModule {}

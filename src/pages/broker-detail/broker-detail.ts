@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
-import {BrokerService} from '../../providers/broker-service-mock';
+import {BrokerService} from '../../providers/broker-service-rest';
 
 @Component({
     selector: 'page-broker-detail',

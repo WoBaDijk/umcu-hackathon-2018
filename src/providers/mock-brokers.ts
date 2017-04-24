@@ -1,8 +1,7 @@
-let brokers = [
+let brokers: Array<any> = [
     {
         id: 1,
-        firstName: "Caroline",
-        lastName: "Kingsley",
+        name: "Caroline Kingsley",
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
@@ -11,8 +10,7 @@ let brokers = [
     },
     {
         id: 2,
-        firstName: "Michael",
-        lastName: "Jones",
+        name: "Michael Jones",
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
@@ -21,8 +19,7 @@ let brokers = [
     },
     {
         id: 3,
-        firstName: "Jonathan",
-        lastName: "Bradley",
+        name: "Jonathan Bradley",
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
@@ -31,8 +28,7 @@ let brokers = [
     },
     {
         id: 4,
-        firstName: "Jennifer",
-        lastName: "Wu",
+        name: "Jennifer Wu",
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
@@ -41,8 +37,7 @@ let brokers = [
     },
     {
         id: 5,
-        firstName: "Olivia",
-        lastName: "Green",
+        name: "Olivia Green",
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
@@ -51,8 +46,7 @@ let brokers = [
     },
     {
         id: 6,
-        firstName: "Miriam",
-        lastName: "Aupont",
+        name: "Miriam Aupont",
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
@@ -61,8 +55,7 @@ let brokers = [
     },
     {
         id: 7,
-        firstName: "Michelle",
-        lastName: "Lambert",
+        name: "Michelle Lambert",
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
@@ -71,8 +64,7 @@ let brokers = [
     },
     {
         id: 8,
-        firstName: "Victor",
-        lastName: "Ochoa",
+        name: "Victor Ochoa",
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",

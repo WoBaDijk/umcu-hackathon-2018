@@ -4,7 +4,8 @@ import properties from './mock-properties';
 @Injectable()
 export class PropertyService {
 
-  favorites: any = [];
+  favoriteCounter: number = 0;
+  favorites: Array<any> = [];
 
   findAll() {
     return Promise.resolve(properties);
@@ -25,12 +26,13 @@ export class PropertyService {
   }
 
   favorite(property) {
-    this.favorites.push(property);
+    this.favoriteCounter = this.favoriteCounter + 1;
+    this.favorites.push({id: this.favoriteCounter, property: property});
     return Promise.resolve();
   }
 
-  unfavorite(property) {
-    let index = this.favorites.indexOf(property);
+  unfavorite(favorite) {
+    let index = this.favorites.indexOf(favorite);
     if (index > -1) {
       this.favorites.splice(index, 1);
     }

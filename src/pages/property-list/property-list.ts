@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 import {Config, NavController} from 'ionic-angular';
-import {PropertyService} from '../../providers/property-service-mock';
+import {PropertyService} from '../../providers/property-service-rest';
 import {PropertyDetailPage} from '../property-detail/property-detail';
-import 'leaflet';
+import leaflet from 'leaflet';
 
 @Component({
     selector: 'page-property-list',
@@ -32,7 +32,7 @@ export class PropertyListPage {
                     this.showMarkers();
                 }
             })
-            .catch(error => alert(error));
+            .catch(error => alert(JSON.stringify(error)));
     }
 
     onCancel(event) {
@@ -47,8 +47,8 @@ export class PropertyListPage {
 
     showMap() {
         setTimeout(() => {
-            this.map = L.map("map").setView([42.361132, -71.070876], 14);
-            L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+            this.map = leaflet.map("map").setView([42.361132, -71.070876], 14);
+            leaflet.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
                 attribution: 'Tiles &copy; Esri'
             }).addTo(this.map);
             this.showMarkers();
@@ -59,11 +59,13 @@ export class PropertyListPage {
         if (this.markersGroup) {
             this.map.removeLayer(this.markersGroup);
         }
-        this.markersGroup = L.layerGroup([]);
+        this.markersGroup = leaflet.layerGroup([]);
         this.properties.forEach(property => {
-            let marker: any = L.marker([property.lat, property.long]).on('click', event => this.openPropertyDetail(event.target.data));
-            marker.data = property;
-            this.markersGroup.addLayer(marker);
+            if (property.lat, property.long) {
+                let marker: any = leaflet.marker([property.lat, property.long]).on('click', event => this.openPropertyDetail(event.target.data));
+                marker.data = property;
+                this.markersGroup.addLayer(marker);
+            }
         });
         this.map.addLayer(this.markersGroup);
     }
