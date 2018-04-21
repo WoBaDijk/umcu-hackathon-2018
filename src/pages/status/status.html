@@ -33,36 +33,36 @@
                                 <ion-note item-right>Niertransplantatie</ion-note>
                             </ion-item>
                         </ion-list>
-                        </ion-card>
+                    </ion-card>
 
-                        <ion-card>
-                                <ion-card-content>
-                                    <h2 class="card-title">Medisch team</h2>
-                                </ion-card-content>
-                                <ion-list>
-                                <ion-item>
-                                    <ion-icon item-left name="contact"></ion-icon>
-                                    <h3>Zaalarts van dienst</h3>
-                                    <ion-note item-right>Aaltje Arts</ion-note>
-                                </ion-item>
-                                <ion-item>
-                                    <ion-icon item-left name="contacts"></ion-icon>
-                                    <h3>Verpleegkundige van dienst</h3>
-                                    <ion-note item-right>Zissie de Zuster</ion-note>
-                                </ion-item>
-                                <ion-item>
-                                    <ion-icon item-left name="clipboard"></ion-icon>
-                                    <h3>Hoofdbehandelaar</h3>
-                                    <ion-note item-right>Prof, dr. dr. dr. Bert Boeman</ion-note>
-                                </ion-item>
-                                <!-- <button ion-item (click)="openBrokerDetail(property.broker)">
-                                    <ion-avatar item-left>
-                                        <img src="{{property.broker.picture}}"/>
-                                    </ion-avatar>
-                                    <h2>{{property.broker.name}}</h2>
-                                    <p>{{property.broker.title}}</p>
-                                </button> -->
-                            </ion-list>
+                    <ion-card>
+                        <ion-card-content>
+                            <h2 class="card-title">Medisch team</h2>
+                        </ion-card-content>
+                        <ion-list>
+                            <ion-item>
+                                <ion-icon item-left name="contact"></ion-icon>
+                                <h3>Zaalarts van dienst</h3>
+                                <ion-note item-right>Aaltje Arts</ion-note>
+                            </ion-item>
+                            <ion-item>
+                                <ion-icon item-left name="contacts"></ion-icon>
+                                <h3>Verpleegkundige van dienst</h3>
+                                <ion-note item-right>Zissie de Zuster</ion-note>
+                            </ion-item>
+                            <ion-item>
+                                <ion-icon item-left name="clipboard"></ion-icon>
+                                <h3>Hoofdbehandelaar</h3>
+                                <ion-note item-right>Prof, dr. dr. dr. Bert Boeman</ion-note>
+                            </ion-item>
+                            <!-- <button ion-item (click)="openBrokerDetail(property.broker)">
+                                <ion-avatar item-left>
+                                    <img src="{{property.broker.picture}}"/>
+                                </ion-avatar>
+                                <h2>{{property.broker.name}}</h2>
+                                <p>{{property.broker.title}}</p>
+                            </button> -->
+                        </ion-list>
                     </ion-card>
                     <!-- <ion-item>
                         <ion-label>Pijn score</ion-label>
@@ -74,9 +74,10 @@
             </ion-col>
             <ion-col col-12 col-sm>
                 <div class="status-box-wrapper">
+                    <H5>Klik op het orgaan wat u wilt zien:</H5>
                     <div class="status-body-box">
                         <img src="../assets/img/status/body.svg">
-                        <div *ngFor="let organ of organs" class="status-bodyparts-{{organ.name}}"><img (click)="openOrganPage(organ)" src="../assets/img/status/{{organ.name}}.svg" alt="{{organ.alias}}"></div>
+                        <div *ngFor="let organ of organs" class="status-bodyparts-{{organ.name}} zoom"><img (click)="openOrganPage(organ)" src="../assets/img/status/{{organ.name}}.svg" alt="{{organ.alias}}"></div>
                     </div>
                 </div>
             </ion-col>
