@@ -24357,6 +24357,45 @@ ion-navbar.toolbar {
   margin-right: 10px;
 }
 
+.advice-header {
+  background-color: #434954;
+  padding: 16px;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+}
+
+.advice-header img {
+  max-width: 200px;
+  min-height: 115px;
+  margin-left: -15px;
+  padding: 25px 0 20px 0;
+}
+
+.advice-info p {
+  color: #697072;
+  text-align: left;
+}
+
+.advice-info ion-icon {
+  color: #3062A5;
+  width: 20px;
+}
+
+.md .advice-info [text-right],
+.wp .advice-info [text-right] {
+  margin-right: 0;
+}
+
+.ios .advice-info {
+  text-align: center;
+}
+
+.ios .advice-info ion-icon {
+  width: auto;
+  margin-right: 10px;
+}
+
 .blank-header {
   background-color: #434954;
   padding: 16px;
@@ -24492,6 +24531,45 @@ ion-navbar.toolbar {
   color: white;
 }
 
+.general-header {
+  background-color: #434954;
+  padding: 16px;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+}
+
+.general-header img {
+  max-width: 200px;
+  min-height: 115px;
+  margin-left: -15px;
+  padding: 25px 0 20px 0;
+}
+
+.general-info p {
+  color: #697072;
+  text-align: left;
+}
+
+.general-info ion-icon {
+  color: #3062A5;
+  width: 20px;
+}
+
+.md .general-info [text-right],
+.wp .general-info [text-right] {
+  margin-right: 0;
+}
+
+.ios .general-info {
+  text-align: center;
+}
+
+.ios .general-info ion-icon {
+  width: auto;
+  margin-right: 10px;
+}
+
 .organ-header {
   background-color: #434954;
   padding: 16px;
@@ -24582,6 +24660,11 @@ ion-footer {
   text-align: center;
 }
 
+ion-col {
+  max-height: 100%;
+  overflow: hidden;
+}
+
 .md .status-info [text-right],
 .wp .status-info [text-right] {
   margin-right: 0;
@@ -24592,6 +24675,45 @@ ion-footer {
 }
 
 .ios .status-info ion-icon {
+  width: auto;
+  margin-right: 10px;
+}
+
+.treatment-header {
+  background-color: #434954;
+  padding: 16px;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+}
+
+.treatment-header img {
+  max-width: 200px;
+  min-height: 115px;
+  margin-left: -15px;
+  padding: 25px 0 20px 0;
+}
+
+.treatment-info p {
+  color: #697072;
+  text-align: left;
+}
+
+.treatment-info ion-icon {
+  color: #3062A5;
+  width: 20px;
+}
+
+.md .treatment-info [text-right],
+.wp .treatment-info [text-right] {
+  margin-right: 0;
+}
+
+.ios .treatment-info {
+  text-align: center;
+}
+
+.ios .treatment-info ion-icon {
   width: auto;
   margin-right: 10px;
 }

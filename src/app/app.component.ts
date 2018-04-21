@@ -40,11 +40,7 @@ export class MyApp {
         this.initializeApp();
 
         this.appMenuItems = [
-<<<<<<< HEAD
-            {title: 'Mijn opname', component: BlankPage, icon: 'person'},
-=======
             {title: 'Mijn opname', component: GeneralPage, icon: 'person'},
->>>>>>> 160fe10671c827f62dc0442514c850c51c890f9c
             {title: 'Status', component: StatusPage, icon: 'pulse'},
             {title: 'Behandelingen', component: TreatmentPage, icon: 'medkit'},
             {title: 'Adviezen', component: AdvicePage, icon: 'text'},
