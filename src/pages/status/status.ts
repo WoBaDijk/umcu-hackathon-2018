@@ -24,6 +24,10 @@ export class StatusPage {
         .catch(error => alert(error));
   }
 
+  evaluateOrganColor(status, lower, upper) {
+    return this.organService.evaluateOrganColor(status, lower, upper);
+  }
+
   openOrganPage(organ: any){
     this.navCtrl.push(OrganPage, organ);
     // this.navCtrl.push(OrganPage);

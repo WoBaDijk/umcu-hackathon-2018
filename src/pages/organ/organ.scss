@@ -1,15 +1,81 @@
 .organ-header {
-  background-color: #434954;
+  background-color: color($colors,dark);
   padding: 16px;
   width: 100%;
-  min-height: 150px;
-  text-align: center;
+  min-height: 120px;
+
+ .organ-header-icon {
+    text-align: center;
+
+    img {
+      max-width: 10em;
+      min-height: 115px;
+    }
+  }
+
+  .organ-summary {
+    position: relative;
+    color: #fff;
+
+    h1 {
+      display: inline-block;
+      line-height: 50px;
+      padding: 0;
+      // margin: 34px 0;
+    }
+
+    .timeline {
+      position: absolute;
+      right: 0;
+      display: inline-block;
+      padding: 0 30px;
+      
+      .day {
+        display: inline-block;
+        max-width: 90px;
+        text-align: center;
+
+        img {
+          display: inline-block;
+        }
+      }
+
+      .today {
+        font-weight: bold;
+        img{
+          height: 5rem;
+        }
+      }
+      
+      .days1 {
+        img{
+          height: 4rem;
+        }
+      }
+
+      .days2 {
+        img{
+          height: 2.8rem;
+        }
+      }
+    }
+  }
 }
 
-.organ-header-img {
-  max-width: 200px;
-  min-height: 115px;
-  padding: 25px 0 20px 0;
+.organ-card {
+  background: #ddd;
+
+  h2 {
+    font-weight: bold;
+  }
+}
+
+.organ-questions {
+  background: color($colors,primary);
+
+  .card-title, p {
+    color: color($colors,light);
+  }
 }
 
 .organ-info p {

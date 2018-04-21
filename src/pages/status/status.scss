@@ -13,6 +13,22 @@
   padding: 25px 0 20px 0;
 }
 
+.status-card {
+  background: #ddd;
+
+  h2 {
+    font-weight: bold;
+  }
+}
+
+.status-medical {
+  background: color($colors, dark);
+
+  .card-title, p {
+    color: color($colors,light);
+  }
+}
+
 // .card-team {
 //   margin-top: 100px;
 // }
@@ -52,8 +68,8 @@ ion-col {
 
 .status-body-box {
   position: relative;
-  left: 12%;
-  width: 76%;
+  left: 15%;
+  width: 70%;
   margin: 0px;
   padding: 0px; 
 }

@@ -18,4 +18,7 @@ export class OrganPage {
       );
   }
 
+  evaluateOrganColor(status, lower, upper) {
+    return this.organService.evaluateOrganColor(status, lower, upper);
+  }
 }

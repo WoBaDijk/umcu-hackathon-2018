@@ -3,7 +3,7 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>Status</ion-title>
+        <ion-title><img class="logo" src="assets/img/umcu-logo-icon-white.png"/></ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -16,7 +16,7 @@
     <ion-grid>
         <ion-row>
             <ion-col col-12 col-sm>
-                    <ion-card>
+                    <ion-card class="status-medical status-card">
                         <ion-card-content>
                             <h2 class="card-title"><strong>Pietje Puk</strong></h2>
                             <p>Afdeling: B2</p>
@@ -35,7 +35,7 @@
                         </ion-list>
                     </ion-card>
 
-                    <ion-card>
+                    <ion-card class="status-team status-card">
                         <ion-card-content>
                             <h2 class="card-title">Medisch team</h2>
                         </ion-card-content>
@@ -77,7 +77,7 @@
                     <H5>Klik op het orgaan wat u wilt zien:</H5>
                     <div class="status-body-box">
                         <img src="../assets/img/status/body.svg">
-                        <div *ngFor="let organ of organs" class="status-bodyparts-{{organ.name}} zoom"><img (click)="openOrganPage(organ)" src="../assets/img/status/{{organ.name}}_grey.svg" alt="{{organ.alias}}"></div>
+                        <div *ngFor="let organ of organs" class="status-bodyparts-{{organ.name}} zoom"><img (click)="openOrganPage(organ)" src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg" alt="{{organ.alias}}"></div>
                     </div>
                 </div>
             </ion-col>
