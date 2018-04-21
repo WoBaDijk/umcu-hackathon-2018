@@ -11,6 +11,7 @@ import {BrokerListPage} from '../pages/broker-list/broker-list';
 import {BrokerDetailPage} from '../pages/broker-detail/broker-detail';
 import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
 import {BlankPage} from '../pages/blank/blank';
+import {StatusPage} from '../pages/status/status';
 import {AboutPage} from '../pages/about/about';
 
 import {PropertyService} from "../providers/property-service-mock";
@@ -24,6 +25,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     WelcomePage,
     BlankPage,
+    StatusPage,
     AboutPage,
     PropertyListPage,
     PropertyDetailPage,
@@ -41,6 +43,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     WelcomePage,
     BlankPage,
+    StatusPage,
     AboutPage,
     PropertyListPage,
     PropertyDetailPage,
