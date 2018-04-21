@@ -53,16 +53,16 @@ x
                         </ion-item>
                     </ion-list>
                 </ion-card>
-                <ion-card class="organ-card organ-advice">
+                <ion-card class="organ-card organ-measurements">
                     <ion-card-content>
-                        <h2 class="card-title">Adviezen</h2>
-                        <p>Voer deze adviezen uit om uw prognoses te verbeteren.</p>
+                        <h2 class="card-title">Metingen</h2>
+                        <p>Onze metingen waarop wij uw gezondheid bepalen.</p>
                     </ion-card-content>
                     <ion-list>
-                        <ion-item>
-                            <ion-icon item-left name="moon"></ion-icon>
-                            <h3>Bedrooms</h3>
-                            <ion-note item-right>awds</ion-note>
+                        <ion-item *ngFor="let parameter of organ.parameters">
+                            <ion-icon item-left name="{{parameter.icon}}"></ion-icon>
+                            <h3>{{parameter.alias}}</h3>
+                            <ion-note item-right>{{parameter.measurements[2].value}}</ion-note>
                         </ion-item>
                     </ion-list>
                 </ion-card>
@@ -81,6 +81,19 @@ x
                         </ion-item>
                     </ion-list>
                 </ion-card>
+                <ion-card class="organ-card organ-advice">
+                        <ion-card-content>
+                            <h2 class="card-title">Adviezen</h2>
+                            <p>Voer deze adviezen uit om uw prognoses te verbeteren.</p>
+                        </ion-card-content>
+                        <ion-list>
+                            <ion-item>
+                                <ion-icon item-left name="moon"></ion-icon>
+                                <h3>Bedrooms</h3>
+                                <ion-note item-right>awds</ion-note>
+                            </ion-item>
+                        </ion-list>
+                    </ion-card>    
                 <ion-card class="organ-card organ-information">
                     <ion-card-content>
                         <h2 class="card-title">Informatie</h2>
