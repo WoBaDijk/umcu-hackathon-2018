@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 94.44 49.33">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: #aaaaaa !important;
+        mix-blend-mode: multiply;
+	  }
+	.cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3, .cls-5 {
+        mix-blend-mode: screen;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4, .cls-6 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-5);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="24.67" x2="94.44" y2="24.67" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#003db8"/>
+      <stop offset="0.02" stop-color="#0046be"/>
+      <stop offset="0.08" stop-color="#0060d1"/>
+      <stop offset="0.16" stop-color="#0074e0"/>
+      <stop offset="0.24" stop-color="#0082ea"/>
+      <stop offset="0.34" stop-color="#008af0"/>
+      <stop offset="0.5" stop-color="#008df2"/>
+      <stop offset="0.66" stop-color="#008af0"/>
+      <stop offset="0.76" stop-color="#0082ea"/>
+      <stop offset="0.84" stop-color="#0074e0"/>
+      <stop offset="0.92" stop-color="#0060d1"/>
+      <stop offset="0.98" stop-color="#0046be"/>
+      <stop offset="1" stop-color="#003db8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="55.59" y1="37.65" x2="32.92" y2="-7.34" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#66c7ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="3.67" y1="37.62" x2="64.23" y2="8.23" gradientTransform="translate(-4.64 11.52) rotate(-4.88)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#66c7ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="2.68" y1="21.85" x2="87.35" y2="21.85" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.06" stop-color="#152834"/>
+      <stop offset="0.12" stop-color="#2a5269"/>
+      <stop offset="0.18" stop-color="#3c7697"/>
+      <stop offset="0.25" stop-color="#4b93bc"/>
+      <stop offset="0.31" stop-color="#57aada"/>
+      <stop offset="0.38" stop-color="#5fbaee"/>
+      <stop offset="0.44" stop-color="#64c4fb"/>
+      <stop offset="0.5" stop-color="#66c7ff"/>
+      <stop offset="0.56" stop-color="#64c4fb"/>
+      <stop offset="0.62" stop-color="#5fbaee"/>
+      <stop offset="0.69" stop-color="#57aada"/>
+      <stop offset="0.75" stop-color="#4b93bc"/>
+      <stop offset="0.82" stop-color="#3c7697"/>
+      <stop offset="0.88" stop-color="#2a5269"/>
+      <stop offset="0.94" stop-color="#152834"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="7.7" y1="45.98" x2="87.52" y2="13.03" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.5" stop-color="#66c7ff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <title>Middel 6</title>
+  <g class="cls-1">
+    <g id="Laag_2" data-name="Laag 2">
+      <g id="Internal_Organs" data-name="Internal Organs">
+        <g id="Pancreas">
+          <g>
+            <path class="cls-2" d="M6.22,21.86c-8.44,4.39-9.65,25.52,5,27.39,4.51.58,30.05-1.73,51.67-15.6,9-5.8,35.93-22.47,31-32-3.68-7.1-29.52,11.09-51,14.45C27.37,18.51,14.66,17.47,6.22,21.86Z"/>
+            <path class="cls-3" d="M14.66,31.36c8.43-4.39,22.27-4.22,37.61-7.48,15.66-3.32,31.87-14,42-18.49a5.7,5.7,0,0,0-.48-3.76c-3.68-7.1-29.52,11.09-51,14.45-15.49,2.43-28.2,1.39-36.64,5.78S-3.4,46.92,10.74,49.18C7.24,42.49,9,34.31,14.66,31.36Z"/>
+            <path class="cls-4" d="M23.68,35.85c2.88-1.26,7.73,1.47,9.86,2.95.71.49,2.77-1.59,2.18-2.22a25.78,25.78,0,0,0-4.16-3.38c2.28-.62,4.56-1.17,6.72-1.7C51.18,28.3,51,26,58.51,31.27c.71.5,2.77-1.58,2.18-2.22a17.3,17.3,0,0,0-4-3.21c12.76-5,12.88-8,21.67-7.74.87,0,1.45-2.84.6-3.05a17.3,17.3,0,0,0-2.6-.4q1.1-.93,2.13-1.92c1.42-1.36-1.77-4.07-3.16-2.73-9,8.66-22.91,12.85-35.39,16.08A24.78,24.78,0,0,0,42,21.15c.22-.84-2.57-1.71-3-.93-5.72,11.18-8,6.1-20,12.79a33,33,0,0,0-2.56-8.37c-.41-.77-3.05.48-2.82,1.32.7,2.5,1.94,8.77-.24,11.06a22.46,22.46,0,0,0-6.6,10.92,12.79,12.79,0,0,0,3.85,1.23C12.49,42.33,17.62,38.42,23.68,35.85Z"/>
+            <path class="cls-5" d="M40.28,17.75C60.22,15.23,70.53,7.13,87.35,2.81c-15.63,7-25.17,15.58-46.52,18.38C18.93,23.85,2.93,21,3.24,40.89-1.09,19.06,20.24,20.23,40.28,17.75Z"/>
+            <path class="cls-6" d="M47.53,39.6C35.36,45.13,6.4,53.24,2.08,38.19c5.72,12.21,32.49,3.19,44-2C64.13,28,73.9,20.83,88,11.6,75.11,22.85,66.58,31,47.53,39.6Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
