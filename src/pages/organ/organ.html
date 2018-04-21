@@ -36,77 +36,64 @@ x
                 </div>
             </ion-col>
         </ion-row>
-        <ion-row>
+        <ion-row *ngIf="organ.id">
             <ion-col col-12 col-sm>
-                <ion-card *ngIf="organ.id" class="organ-questions">
+                <ion-card class="organ-card organ-questions">
                     <ion-card-content>
                         <h2 class="card-title">Vragen</h2>
-                        <p>Tralalala...</p>
+                        <p>Vertel ons relevante informatie om ons te helpen in het vinden van het probleem.</p>
                     </ion-card-content>
                     <ion-list>
-
-                    <ion-item>
-                        <ion-icon item-left name="moon"></ion-icon>
-                        <h3>Bedroomasdfasds</h3>
-                        <ion-note item-right>awds</ion-note>
-                    </ion-item>
-                        <!-- <button ion-item (click)="openBrokerDetail(property.broker)">
-                            <ion-avatar item-left>
-                                <img src="{{property.broker.picture}}"/>
-                            </ion-avatar>
-                            <h2>{{property.broker.name}}</h2>
-                            <p>{{property.broker.title}}</p>
-                        </button> -->
+                        <ion-item>
+                            <ion-label>Hoeveel pijn heeft u?</ion-label>
+                            <ion-range min="0" max="10" step="1" snaps="true" color="primary" [(ngModel)]="singleValue4">
+                                    <ion-icon small range-left color="safe" name="happy"> Geen pijn</ion-icon>
+                                    <ion-icon small range-right color="danger" name="sad"> Veel pijn</ion-icon>
+                            </ion-range>
+                        </ion-item>
                     </ion-list>
-
-                    <!-- <ion-item>
-                        <button ion-button icon-left (click)="favorite(property)" clear item-left>
-                            <ion-icon name="star"></ion-icon>
-                            Favorite
-                        </button>
-                        <button ion-button icon-left (click)="share(property)" clear item-right>
-                            <ion-icon name="share"></ion-icon>
-                            Share
-                        </button>
-                    </ion-item> -->
-
+                </ion-card>
+                <ion-card class="organ-card organ-advice">
+                    <ion-card-content>
+                        <h2 class="card-title">Adviezen</h2>
+                        <p>Voer deze adviezen uit om uw prognoses te verbeteren.</p>
+                    </ion-card-content>
+                    <ion-list>
+                        <ion-item>
+                            <ion-icon item-left name="moon"></ion-icon>
+                            <h3>Bedrooms</h3>
+                            <ion-note item-right>awds</ion-note>
+                        </ion-item>
+                    </ion-list>
                 </ion-card>
             </ion-col>
             <ion-col col-12 col-sm>
-                <ion-card *ngIf="organ.id">
+                <ion-card class="organ-card organ-treatment">
                     <ion-card-content>
-                        <h2 class="card-title">{{organ.name}}</h2>
-                        <p>{{organ.status}}</p>
+                        <h2 class="card-title">Behandelingen</h2>
+                        <p>Voer deze adviezen uit om uw prognoses te verbeteren.</p>
                     </ion-card-content>
                     <ion-list>
-
-                    <ion-item>
-                        <ion-icon item-left name="moon"></ion-icon>
-                        <h3>Bedrooms</h3>
-                        <ion-note item-right>awds</ion-note>
-                    </ion-item>
-                        <!-- <button ion-item (click)="openBrokerDetail(property.broker)">
-                            <ion-avatar item-left>
-                                <img src="{{property.broker.picture}}"/>
-                            </ion-avatar>
-                            <h2>{{property.broker.name}}</h2>
-                            <p>{{property.broker.title}}</p>
-                        </button> -->
+                        <ion-item>
+                            <ion-icon item-left name="moon"></ion-icon>
+                            <h3>Bedrooms</h3>
+                            <ion-note item-right>awds</ion-note>
+                        </ion-item>
                     </ion-list>
-
-                    <!-- <ion-item>
-                        <button ion-button icon-left (click)="favorite(property)" clear item-left>
-                            <ion-icon name="star"></ion-icon>
-                            Favorite
-                        </button>
-                        <button ion-button icon-left (click)="share(property)" clear item-right>
-                            <ion-icon name="share"></ion-icon>
-                            Share
-                        </button>
-                    </ion-item> -->
-
                 </ion-card>
-        
+                <ion-card class="organ-card organ-information">
+                    <ion-card-content>
+                        <h2 class="card-title">Informatie</h2>
+                        <p>Voer deze adviezen uit om uw prognoses te verbeteren.</p>
+                    </ion-card-content>
+                    <ion-list>
+                        <ion-item>
+                            <ion-icon item-left name="moon"></ion-icon>
+                            <h3>Bedrooms</h3>
+                            <ion-note item-right>awds</ion-note>
+                        </ion-item>
+                    </ion-list>
+                </ion-card>
             </ion-col>
         </ion-row>        
     </ion-grid>

@@ -1,15 +1,5 @@
-ion-title {
-  text-align: center;
-  
-  img.logo {
-    height: 30px;
-    position: relative;
-    top: 2px;
-  }
-}
-
 .organ-header {
-  background-color: #434954;
+  background-color: color($colors,dark);
   padding: 16px;
   width: 100%;
   min-height: 120px;
@@ -69,6 +59,22 @@ ion-title {
         }
       }
     }
+  }
+}
+
+.organ-card {
+  background: #ddd;
+
+  h2 {
+    font-weight: bold;
+  }
+}
+
+.organ-questions {
+  background: color($colors,primary);
+
+  .card-title, p {
+    color: color($colors,light);
   }
 }
 
