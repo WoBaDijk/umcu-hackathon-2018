@@ -17,4 +17,11 @@ export class OrganService {
     return Promise.resolve(organs.filter((organ: any) =>
         (organ.name).toUpperCase().indexOf(key) > -1));
   }
+
+  evaluateOrganColor(status, lower, upper) {
+    if(status > upper) return "green";
+    else if(status > lower) return "orange";
+    else if(status <= lower) return "red";
+    else return "grey";
+  }
 }

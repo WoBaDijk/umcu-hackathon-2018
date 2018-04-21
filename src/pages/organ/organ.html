@@ -5,10 +5,10 @@
 </ion-header>
 
 <ion-content>
-    <ion-grid>
+    <ion-grid no-padding>
         <ion-row class="organ-header">
             <ion-col class="organ-header-icon" col-12 col-sm col-sm-3>
-                <img src="../assets/img/status/{{organ.name}}.svg"/>
+                <img src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg"/>
             </ion-col>
             <ion-col class="organ-summary" col-12 col-sm col-sm-9>
                 <h1>{{organ.alias}}</h1>
