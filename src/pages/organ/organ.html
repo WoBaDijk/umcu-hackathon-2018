@@ -1,25 +1,47 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>Organ</ion-title>
+        <ion-title><img class="logo" src="assets/img/umcu-logo-icon-white.png"/></ion-title>
     </ion-navbar>
 </ion-header>
-
+x
 <ion-content>
     <ion-grid no-padding>
         <ion-row class="organ-header">
-            <ion-col class="organ-header-icon" col-12 col-sm col-sm-3>
+            <!-- <ion-col class="organ-header-icon" col-12 col-sm col-sm-3>
                 <img src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg"/>
-            </ion-col>
-            <ion-col class="organ-summary" col-12 col-sm col-sm-9>
+            </ion-col> -->
+            <ion-col class="organ-summary" col-12 col-sm>
                 <h1>{{organ.alias}}</h1>
+                <div class="timeline">
+                    <div class="day days2">
+                            <img src="../assets/img/status/{{organ.name}}_grey.svg"/>
+                            <span>Eergisteren</span>
+                    </div>
+                    <div class="day days1">
+                            <img src="../assets/img/status/{{organ.name}}_red.svg"/>
+                            <span>Gisteren</span>
+                    </div>
+                    <div class="day today">
+                            <img src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg"/>
+                            <span>Vandaag</span>
+                    </div>
+                    <div class="day days1">
+                            <img src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg"/>
+                            <span>Morgen</span>
+                    </div>
+                    <div class="day days2">
+                            <img src="../assets/img/status/{{organ.name}}_green.svg"/>
+                            <span>Overmorgen</span>
+                    </div>
+                </div>
             </ion-col>
         </ion-row>
         <ion-row>
             <ion-col col-12 col-sm>
-                <ion-card *ngIf="organ.id">
+                <ion-card *ngIf="organ.id" class="organ-questions">
                     <ion-card-content>
-                        <h2 class="card-title">{{organ.name}}</h2>
-                        <p>{{organ.status}}</p>
+                        <h2 class="card-title">Vragen</h2>
+                        <p>Tralalala...</p>
                     </ion-card-content>
                     <ion-list>
 

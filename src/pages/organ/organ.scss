@@ -1,8 +1,18 @@
+ion-title {
+  text-align: center;
+  
+  img.logo {
+    height: 30px;
+    position: relative;
+    top: 2px;
+  }
+}
+
 .organ-header {
   background-color: #434954;
   padding: 16px;
   width: 100%;
-  min-height: 150px;
+  min-height: 120px;
 
  .organ-header-icon {
     text-align: center;
@@ -14,7 +24,51 @@
   }
 
   .organ-summary {
+    position: relative;
     color: #fff;
+
+    h1 {
+      display: inline-block;
+      line-height: 50px;
+      padding: 0;
+      // margin: 34px 0;
+    }
+
+    .timeline {
+      position: absolute;
+      right: 0;
+      display: inline-block;
+      padding: 0 30px;
+      
+      .day {
+        display: inline-block;
+        max-width: 90px;
+        text-align: center;
+
+        img {
+          display: inline-block;
+        }
+      }
+
+      .today {
+        font-weight: bold;
+        img{
+          height: 5rem;
+        }
+      }
+      
+      .days1 {
+        img{
+          height: 4rem;
+        }
+      }
+
+      .days2 {
+        img{
+          height: 2.8rem;
+        }
+      }
+    }
   }
 }
 
