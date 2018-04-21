@@ -27,6 +27,16 @@
   text-align: center;
 }
 
+ion-col {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+// .status-body {
+//   max-height: 60%;
+//   overflow: hidden;
+// }
+
 .md,
 .wp {
   .status-info [text-right] {

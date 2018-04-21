@@ -13,21 +13,23 @@
         <img src="assets/img/umcu-logo.png">
     </div>
 -->
-    <div padding class="blank-info">
-
-        <h4 class="status-title">Klik op het orgaan van keuze</h4>
-
-        <p>
-            <img src="assets/img/test.svg">
-        </p>
-
-    </div>
-
-    <ion-item-sliding *ngFor="let organ of organs">
-        <button ion-item (click)="openOrganPage(organ)">
-            <h2>{{organ.name}}</h2>
-            <p>{{organ.status}}</p>
-        </button>
-    </ion-item-sliding>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-12 col-sm>
+                <div  class="status-body">
+                    <h4 class="status-title">Klik op het orgaan van keuze</h4>
+                    <img src="assets/img/test.svg">
+                </div>
+            </ion-col>
+            <ion-col col-12 col-sm>
+                <ion-item-sliding *ngFor="let organ of organs">
+                    <button ion-item (click)="openOrganPage(organ)">
+                        <h2>{{organ.name}}</h2>
+                        <p>{{organ.status}}</p>
+                    </button>
+                </ion-item-sliding>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
 
 </ion-content>
