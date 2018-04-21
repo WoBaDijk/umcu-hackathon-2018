@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 99.65 69.31">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6{
+        fill: #EC1C24 !important;
+        mix-blend-mode: multiply;
+	  }
+	.cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3, .cls-4 {
+        mix-blend-mode: screen;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-6 {
+        mix-blend-mode: multiply;
+        fill: url(#linear-gradient-4);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="10.33" y1="63.45" x2="115.65" y2="63.45" gradientTransform="translate(-20.38 -21.91) rotate(-6.83)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#003db8"/>
+      <stop offset="0.02" stop-color="#0046be"/>
+      <stop offset="0.08" stop-color="#0060d1"/>
+      <stop offset="0.16" stop-color="#0074e0"/>
+      <stop offset="0.24" stop-color="#0082ea"/>
+      <stop offset="0.34" stop-color="#008af0"/>
+      <stop offset="0.5" stop-color="#008df2"/>
+      <stop offset="0.66" stop-color="#008af0"/>
+      <stop offset="0.76" stop-color="#0082ea"/>
+      <stop offset="0.84" stop-color="#0074e0"/>
+      <stop offset="0.92" stop-color="#0060d1"/>
+      <stop offset="0.98" stop-color="#0046be"/>
+      <stop offset="1" stop-color="#003db8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="50.66" y1="39.48" x2="39.4" y2="-25.21" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#66c7ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="2.57" y1="31.06" x2="92.61" y2="31.06" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.06" stop-color="#152834"/>
+      <stop offset="0.12" stop-color="#2a5269"/>
+      <stop offset="0.18" stop-color="#3c7697"/>
+      <stop offset="0.25" stop-color="#4b93bc"/>
+      <stop offset="0.31" stop-color="#57aada"/>
+      <stop offset="0.38" stop-color="#5fbaee"/>
+      <stop offset="0.44" stop-color="#64c4fb"/>
+      <stop offset="0.5" stop-color="#66c7ff"/>
+      <stop offset="0.56" stop-color="#64c4fb"/>
+      <stop offset="0.62" stop-color="#5fbaee"/>
+      <stop offset="0.69" stop-color="#57aada"/>
+      <stop offset="0.75" stop-color="#4b93bc"/>
+      <stop offset="0.82" stop-color="#3c7697"/>
+      <stop offset="0.88" stop-color="#2a5269"/>
+      <stop offset="0.94" stop-color="#152834"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="11.16" y1="60.21" x2="88.07" y2="27.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.5" stop-color="#66c7ff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <title>Middel 5</title>
+  <g class="cls-1">
+    <g id="Laag_2" data-name="Laag 2">
+      <g id="Internal_Organs" data-name="Internal Organs">
+        <g>
+          <path class="cls-2" d="M62.7,6.74c7.37.15,23.45-10.45,34.08-5.35,5.76,2.76,2.25,21.79-5.29,32.28C81.23,48,67.3,45.89,61.12,48.58S51,60,36.52,64.6c-17.89,5.63-30.78,5.87-35,2.55S1.18,14.9,23.36,6.75C42.68-.35,55.32,6.6,62.7,6.74Z"/>
+          <path class="cls-3" d="M23.36,29.6c19.32-7.1,32-.15,39.34,0,6.46.13,25.22-18.21,36.91-19.29.21-4.42-.63-7.86-2.83-8.91C86.15-3.71,70.07,6.89,62.7,6.74s-20-7.09-39.34,0C1.35,14.83-2.66,63,1.41,67,4.09,51.94,10.78,34.22,23.36,29.6Z"/>
+          <g class="cls-4">
+            <path class="cls-5" d="M32.52,12.1C20.07,14.74,14.84,23.52,10.69,31.82A101.49,101.49,0,0,0,2.57,60.09,85.57,85.57,0,0,1,7.18,30.38c3.06-8.7,9.8-20.2,24.15-23.28C45,4.18,56.14,7.75,64.69,9.47,72.75,9.25,81.55,1.62,92.61,2,81.29,3.32,75.82,11.56,64.47,13.26,54.12,12.12,45,9.45,32.52,12.1Z"/>
+          </g>
+          <path class="cls-6" d="M72.31,38.28c-2.62.56-5.3.79-8.37,1.28,2.56-6.66,2.61-14.88,2.61-14.88-4.38,14.25-12.75,19.45-16.72,23C43.07,53.84,36.75,56.47,30,58.59c-6.57,2.2-12.84,4.34-20.75,5.18,8,.8,14.78-.11,21.75-1.52A42.62,42.62,0,0,0,53.24,51.51c11.29-10.16,7.24-5.09,20.07-9.57a29.5,29.5,0,0,0,16.91-13.8A30.89,30.89,0,0,1,72.31,38.28Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
