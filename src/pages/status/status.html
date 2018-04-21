@@ -16,25 +16,20 @@
     <ion-grid>
         <ion-row>
             <ion-col col-12 col-sm>
-                <div class="status-body-box">
-                    <img src="../assets/img/status/body.svg">
-                    <div class="status-bodyparts-brain"><img src="../assets/img/status/brain.svg" alt="hersenen"></div>
-                    <div class="status-bodyparts-lungs"><img src="../assets/img/status/lungs.svg" alt="hersenen"></div>
-                    <div class="status-bodyparts-heart"><img src="../assets/img/status/heart.svg" alt="hersenen"></div>
-                    <div class="status-bodyparts-liver"><img src="../assets/img/status/liver.svg" alt="hersenen"></div>
-                    <div class="status-bodyparts-pancreas"><img src="../assets/img/status/pancreas.svg" alt="hersenen"></div>            
-                    <div class="status-bodyparts-kidney_l"><img src="../assets/img/status/kidney_l.svg" alt="hersenen"></div>            
-                    <div class="status-bodyparts-kidney_r"><img src="../assets/img/status/kidney_r.svg" alt="hersenen"></div>            
-                    <div class="status-bodyparts-gastrointestinal"><img src="../assets/img/status/gastrointestinal.svg" alt="hersenen"></div>            
-                </div>
-            </ion-col>
-            <ion-col col-12 col-sm>
                 <ion-item-sliding *ngFor="let organ of organs">
                     <button ion-item (click)="openOrganPage(organ)">
                         <h2>{{organ.name}}</h2>
                         <p>{{organ.status}}</p>
                     </button>
                 </ion-item-sliding>
+            </ion-col>
+            <ion-col col-12 col-sm>
+                <div class="status-box-wrapper">
+                    <div class="status-body-box">
+                        <img src="../assets/img/status/body.svg">
+                        <div *ngFor="let organ of organs" class="status-bodyparts-{{organ.name}}"><img (click)="openOrganPage(organ)" src="../assets/img/status/{{organ.name}}.svg" alt="{{organ.alias}}"></div>
+                    </div>
+                </div>
             </ion-col>
         </ion-row>
       </ion-grid>

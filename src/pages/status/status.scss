@@ -32,14 +32,13 @@ ion-col {
   overflow: hidden;
 }
 
-// .status-body {
-//   max-height: 60%;
-//   overflow: hidden;
-// }
+.status-box-wrapper {
+  max-height: 90vh;
+  overflow: hidden;
+}
 
 .status-body-box {
   position: relative;
-  width: 100%;
   margin: 0px;
   padding: 0px; 
 }
