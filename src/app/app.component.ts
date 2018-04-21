@@ -10,6 +10,7 @@ import {WelcomePage} from '../pages/welcome/welcome';
 import {StatusPage} from '../pages/status/status';
 import {BlankPage} from '../pages/blank/blank';
 import {AboutPage} from '../pages/about/about';
+import {DetailPage} from '../pages/detailpage/detailpage';
 
 export interface MenuItem {
     title: string;
@@ -39,6 +40,7 @@ export class MyApp {
         this.appMenuItems = [
             {title: 'Mijn opname', component: StatusPage, icon: 'person'},
             {title: 'Status', component: StatusPage, icon: 'pulse'},
+            {title: 'Detail', component: DetailPage, icon: 'medkit'},
             {title: 'Behandelingen', component: PropertyListPage, icon: 'medkit'},
             {title: 'Adviezen', component: PropertyListPage, icon: 'text'},
         ];
