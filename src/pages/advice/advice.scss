@@ -1,0 +1,40 @@
+.advice-header {
+  background-color: #434954;
+  padding: 16px;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+}
+
+.advice-header img {
+  max-width: 200px;
+  min-height: 115px;
+  margin-left: -15px;
+  padding: 25px 0 20px 0;
+}
+
+.advice-info p {
+  color: #697072;
+  text-align: left;
+}
+
+.advice-info ion-icon {
+  color: color($colors, primary);
+  width: 20px;
+}
+
+.md,
+.wp {
+  .advice-info [text-right] {
+    margin-right: 0;
+  }
+}
+
+.ios .advice-info {
+  text-align: center;
+}
+
+.ios .advice-info ion-icon {
+  width: auto;
+  margin-right: 10px;
+}

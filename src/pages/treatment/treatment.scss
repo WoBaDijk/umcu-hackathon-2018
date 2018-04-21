@@ -1,0 +1,40 @@
+.treatment-header {
+  background-color: #434954;
+  padding: 16px;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+}
+
+.treatment-header img {
+  max-width: 200px;
+  min-height: 115px;
+  margin-left: -15px;
+  padding: 25px 0 20px 0;
+}
+
+.treatment-info p {
+  color: #697072;
+  text-align: left;
+}
+
+.treatment-info ion-icon {
+  color: color($colors, primary);
+  width: 20px;
+}
+
+.md,
+.wp {
+  .treatment-info [text-right] {
+    margin-right: 0;
+  }
+}
+
+.ios .treatment-info {
+  text-align: center;
+}
+
+.ios .treatment-info ion-icon {
+  width: auto;
+  margin-right: 10px;
+}
