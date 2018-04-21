@@ -7,6 +7,7 @@ import {PropertyListPage} from '../pages/property-list/property-list';
 import {BrokerListPage} from '../pages/broker-list/broker-list';
 import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
 import {WelcomePage} from '../pages/welcome/welcome';
+import {BlankPage} from '../pages/blank/blank';
 import {AboutPage} from '../pages/about/about';
 
 export interface MenuItem {
@@ -33,6 +34,7 @@ export class MyApp {
         this.initializeApp();
 
         this.appMenuItems = [
+            {title: 'Blanco pagina', component: BlankPage, icon: 'home'},
             {title: 'Properties', component: PropertyListPage, icon: 'home'},
             {title: 'Brokers', component: BrokerListPage, icon: 'people'},
             {title: 'Favorites', component: FavoriteListPage, icon: 'star'},
@@ -40,8 +42,8 @@ export class MyApp {
         ];
 
         this.accountMenuItems = [
-            {title: 'My Account', component: WelcomePage, icon: 'ios-contact'},
-            {title: 'Logout', component: WelcomePage, icon: 'log-out'},
+            {title: 'Mijn account', component: WelcomePage, icon: 'ios-contact'},
+            {title: 'Uitloggen', component: WelcomePage, icon: 'log-out'},
         ];
 
         this.helpMenuItems = [

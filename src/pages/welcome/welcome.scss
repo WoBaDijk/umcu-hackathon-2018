@@ -12,7 +12,8 @@ page-welcome {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(132, 191, 65, .8);
+      //background-color: color($colors, secondary);
+      background-color: rgba(color($colors, primary), 0.5);
       color: #FFFFFF;
       padding: 28px 28px 48px 28px;
       font-size: 2.7rem;

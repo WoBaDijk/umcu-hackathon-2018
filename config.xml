@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="org.coenraets.dreamhouse" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>DreamHouse</name>
-  <description>DreamHouse sample app</description>
-  <author email="ccoenraets@gmail.com" href="http://coenraets.org">Christophe Coenraets</author>
+<widget id="nl.umcu.hackinghealth2018" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>UrStatus</name>
+  <description>App build during the Hacking Health hackathon 2018 in the UMC Utrecht</description>
+  <author email="t.kappen@umcutrecht.nl" href="http://www.umcutrecht.nl/">Team UrStatus</author>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="http://ionic.local/*"/>
