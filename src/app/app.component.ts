@@ -7,6 +7,7 @@ import {PropertyListPage} from '../pages/property-list/property-list';
 import {BrokerListPage} from '../pages/broker-list/broker-list';
 import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
 import {WelcomePage} from '../pages/welcome/welcome';
+import {StatusPage} from '../pages/status/status';
 import {BlankPage} from '../pages/blank/blank';
 import {AboutPage} from '../pages/about/about';
 
@@ -22,7 +23,7 @@ export interface MenuItem {
 export class MyApp {
     @ViewChild(Nav) nav: Nav;
 
-    rootPage: any = WelcomePage;
+    rootPage: any = StatusPage;
 
     appMenuItems: Array<MenuItem>;
 
@@ -41,16 +42,15 @@ export class MyApp {
             {title: 'Get Preapproved', component: WelcomePage, icon: 'checkmark-circle'},
         ];
 
-        this.accountMenuItems = [
-            {title: 'Mijn account', component: WelcomePage, icon: 'ios-contact'},
-            {title: 'Uitloggen', component: WelcomePage, icon: 'log-out'},
-        ];
-
         this.helpMenuItems = [
             {title: 'Welcome', component: WelcomePage, icon: 'bookmark'},
             {title: 'About', component: AboutPage, icon: 'information-circle'},
         ];
 
+        this.accountMenuItems = [
+            {title: 'Mijn account', component: WelcomePage, icon: 'ios-contact'},
+            {title: 'Uitloggen', component: WelcomePage, icon: 'log-out'},
+        ];
     }
 
     initializeApp() {
