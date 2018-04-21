@@ -2,10 +2,21 @@ page-welcome {
 
   font-weight: 300;
 
+  ion-title {
+    text-align: center;
+    
+    img.logo {
+      height: 30px;
+      position: relative;
+      top: 2px;
+    }
+  }
+
   ion-slide {
 
     position: relative;
     background-size: cover;
+    background-position: center center;
 
     p {
       position: absolute;
@@ -24,6 +35,11 @@ page-welcome {
       width: 50px;
       height: 50px;
       margin-top: -150px
+    }
+
+    .next-icon {
+      position: relative;
+      top: 3px;
     }
 
   }
