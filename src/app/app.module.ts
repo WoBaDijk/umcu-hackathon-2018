@@ -11,8 +11,11 @@ import {BrokerListPage} from '../pages/broker-list/broker-list';
 import {BrokerDetailPage} from '../pages/broker-detail/broker-detail';
 import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
 import {BlankPage} from '../pages/blank/blank';
+import {GeneralPage} from '../pages/general/general';
 import {StatusPage} from '../pages/status/status';
 import {OrganPage} from '../pages/organ/organ';
+import {TreatmentPage} from '../pages/treatment/treatment';
+import {AdvicePage} from '../pages/advice/advice';
 import {AboutPage} from '../pages/about/about';
 
 import {OrganService} from "../providers/organ-service-mock";
@@ -28,8 +31,11 @@ import { DetailPage } from '../pages/detailpage/detailpage';
     MyApp,
     WelcomePage,
     BlankPage,
+    GeneralPage,
     StatusPage,
     OrganPage,
+    TreatmentPage,
+    AdvicePage,
     AboutPage,
     PropertyListPage,
     PropertyDetailPage,
@@ -48,8 +54,11 @@ import { DetailPage } from '../pages/detailpage/detailpage';
     MyApp,
     WelcomePage,
     BlankPage,
+    GeneralPage,
     StatusPage,
     OrganPage,
+    TreatmentPage,
+    AdvicePage,
     AboutPage,
     PropertyListPage,
     PropertyDetailPage,
