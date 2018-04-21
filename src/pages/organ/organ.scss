@@ -1,4 +1,4 @@
-.status-header {
+.organ-header {
   background-color: #434954;
   padding: 16px;
   width: 100%;
@@ -6,39 +6,44 @@
   text-align: center;
 }
 
-.status-header img {
+.organ-header img {
   max-width: 200px;
   min-height: 115px;
   margin-left: -15px;
   padding: 25px 0 20px 0;
 }
 
-.status-info p {
+.organ-info p {
   color: #697072;
   text-align: left;
 }
 
-.status-info ion-icon {
+.organ-info ion-icon {
   color: color($colors, primary);
   width: 20px;
 }
 
-.status-title {
+.organ-title {
   text-align: center;
+}
+
+.organ-person {
+  position: absolute;
+  bottom: 0;
 }
 
 .md,
 .wp {
-  .status-info [text-right] {
+  .organ-info [text-right] {
     margin-right: 0;
   }
 }
 
-.ios .status-info {
+.ios .organ-info {
   text-align: center;
 }
 
-.ios .status-info ion-icon {
+.ios .organ-info ion-icon {
   width: auto;
   margin-right: 10px;
 }

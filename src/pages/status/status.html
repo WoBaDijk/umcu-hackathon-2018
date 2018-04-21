@@ -3,7 +3,7 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>UrStatus</ion-title>
+        <ion-title>Status</ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -15,12 +15,19 @@
 -->
     <div padding class="blank-info">
 
-        <h4>Klik op het orgaan van keuze</h4>
+        <h4 class="status-title">Klik op het orgaan van keuze</h4>
 
         <p>
             <img src="assets/img/test.svg">
         </p>
 
     </div>
+
+    <ion-item-sliding *ngFor="let organ of organs">
+        <button ion-item (click)="openOrganPage(organ)">
+            <h2>{{organ.name}}</h2>
+            <p>{{organ.status}}</p>
+        </button>
+    </ion-item-sliding>
 
 </ion-content>

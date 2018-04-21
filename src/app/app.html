@@ -5,16 +5,13 @@
     <img src="assets/img/umcu-logo.png" class="menu-logo"/>
 
     <ion-list>
-      <ion-list-header>
-        Testpagina's
-      </ion-list-header>
       <button menuClose ion-item *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">
         <ion-icon item-left [name]="menuItem.icon"></ion-icon>
         {{menuItem.title}}
       </button>
     </ion-list>
 
-    <ion-list>
+    <!-- <ion-list>
       <ion-list-header>
         Help
       </ion-list-header>
@@ -22,17 +19,28 @@
         <ion-icon item-left [name]="menuItem.icon"></ion-icon>
         {{menuItem.title}}
       </button>
-    </ion-list>
+    </ion-list> -->
 
     <ion-list>
       <ion-list-header>
-        Account
+        Overige
       </ion-list-header>
       <button menuClose ion-item *ngFor="let menuItem of accountMenuItems" (click)="openPage(menuItem)">
         <ion-icon item-left [name]="menuItem.icon"></ion-icon>
         {{menuItem.title}}
       </button>
     </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        Oud
+      </ion-list-header>
+      <button menuClose ion-item *ngFor="let menuItem of backupMenuItems" (click)="openPage(menuItem)">
+        <ion-icon item-left [name]="menuItem.icon"></ion-icon>
+        {{menuItem.title}}
+      </button>
+    </ion-list>
+
 
   </ion-content>
 

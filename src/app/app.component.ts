@@ -31,24 +31,28 @@ export class MyApp {
 
     helpMenuItems: Array<MenuItem>;
 
+    backupMenuItems: Array<MenuItem>;
+
     constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
         this.initializeApp();
 
         this.appMenuItems = [
-            {title: 'Blanco pagina', component: BlankPage, icon: 'home'},
+            {title: 'Mijn opname', component: StatusPage, icon: 'person'},
+            {title: 'Status', component: StatusPage, icon: 'pulse'},
+            {title: 'Behandelingen', component: PropertyListPage, icon: 'medkit'},
+            {title: 'Adviezen', component: PropertyListPage, icon: 'text'},
+        ];
+
+        this.backupMenuItems = [
             {title: 'Properties', component: PropertyListPage, icon: 'home'},
             {title: 'Brokers', component: BrokerListPage, icon: 'people'},
             {title: 'Favorites', component: FavoriteListPage, icon: 'star'},
             {title: 'Get Preapproved', component: WelcomePage, icon: 'checkmark-circle'},
         ];
 
-        this.helpMenuItems = [
-            {title: 'Welcome', component: WelcomePage, icon: 'bookmark'},
-            {title: 'About', component: AboutPage, icon: 'information-circle'},
-        ];
-
         this.accountMenuItems = [
-            {title: 'Mijn account', component: WelcomePage, icon: 'ios-contact'},
+            // {title: 'Mijn account', component: WelcomePage, icon: 'ios-contact'},
+            {title: 'Over deze app', component: AboutPage, icon: 'information-circle'},
             {title: 'Uitloggen', component: WelcomePage, icon: 'log-out'},
         ];
     }
