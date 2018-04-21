@@ -7,8 +7,11 @@ import {PropertyListPage} from '../pages/property-list/property-list';
 import {BrokerListPage} from '../pages/broker-list/broker-list';
 import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
 import {WelcomePage} from '../pages/welcome/welcome';
+import {GeneralPage} from '../pages/general/general';
 import {StatusPage} from '../pages/status/status';
-import {BlankPage} from '../pages/blank/blank';
+import {OrganPage} from '../pages/organ/organ';
+import {TreatmentPage} from '../pages/treatment/treatment';
+import {AdvicePage} from '../pages/advice/advice';
 import {AboutPage} from '../pages/about/about';
 
 export interface MenuItem {
@@ -37,10 +40,10 @@ export class MyApp {
         this.initializeApp();
 
         this.appMenuItems = [
-            {title: 'Mijn opname', component: StatusPage, icon: 'person'},
+            {title: 'Mijn opname', component: GeneralPage, icon: 'person'},
             {title: 'Status', component: StatusPage, icon: 'pulse'},
-            {title: 'Behandelingen', component: PropertyListPage, icon: 'medkit'},
-            {title: 'Adviezen', component: PropertyListPage, icon: 'text'},
+            {title: 'Behandelingen', component: TreatmentPage, icon: 'medkit'},
+            {title: 'Adviezen', component: AdvicePage, icon: 'text'},
         ];
 
         this.backupMenuItems = [
