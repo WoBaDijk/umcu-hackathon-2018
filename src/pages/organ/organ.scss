@@ -3,13 +3,19 @@
   padding: 16px;
   width: 100%;
   min-height: 150px;
-  text-align: center;
-}
 
-.organ-header-img {
-  max-width: 200px;
-  min-height: 115px;
-  padding: 25px 0 20px 0;
+ .organ-header-icon {
+    text-align: center;
+
+    img {
+      max-width: 10em;
+      min-height: 115px;
+    }
+  }
+
+  .organ-summary {
+    color: #fff;
+  }
 }
 
 .organ-info p {

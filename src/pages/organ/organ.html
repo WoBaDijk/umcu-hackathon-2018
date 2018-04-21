@@ -6,10 +6,17 @@
 
 <ion-content>
     <ion-grid>
+        <ion-row class="organ-header">
+            <ion-col class="organ-header-icon" col-12 col-sm col-sm-3>
+                <img src="../assets/img/status/{{organ.name}}.svg"/>
+            </ion-col>
+            <ion-col class="organ-summary" col-12 col-sm col-sm-9>
+                <h1>{{organ.alias}}</h1>
+            </ion-col>
+        </ion-row>
         <ion-row>
-            <ion-col col-12 col-sm col-md-8>
+            <ion-col col-12 col-sm>
                 <ion-card *ngIf="organ.id">
-                    <img class="organ-header-img" src="../assets/img/status/{{organ.name}}.svg"/>
                     <ion-card-content>
                         <h2 class="card-title">{{organ.name}}</h2>
                         <p>{{organ.status}}</p>
@@ -45,7 +52,6 @@
             </ion-col>
             <ion-col col-12 col-sm>
                 <ion-card *ngIf="organ.id">
-                    <img class="organ-header-img" src="../assets/img/status/{{organ.name}}.svg"/>
                     <ion-card-content>
                         <h2 class="card-title">{{organ.name}}</h2>
                         <p>{{organ.status}}</p>
