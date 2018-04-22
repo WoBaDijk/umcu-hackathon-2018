@@ -1,6 +1,6 @@
 <ion-header>
     <ion-navbar>
-        <ion-title><img class="logo" src="assets/img/umcu-logo-icon-white.png"/></ion-title>
+        <ion-title>{{organ.alias}}</ion-title>
     </ion-navbar>
 </ion-header>
 x
@@ -11,37 +11,44 @@ x
                 <img src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg"/>
             </ion-col> -->
             <ion-col class="organ-summary" col-12 col-sm>
-                <h1>{{organ.alias}}</h1>
-                <div class="timeline">
-                    <div class="day days2">
+                <!-- <h1>{{organ.alias}}</h1> -->
+                <div class="timeline" ion-row no-padding col-12 col-sm>
+                    <div class="day days2" ion-col col-2 offset-1 col-sm>
                             <img src="../assets/img/status/{{organ.name}}_grey.svg"/>
-                            <span>Eergisteren</span>
+                            <div>Eergisteren</div>
                     </div>
-                    <div class="day days1">
+                    <div class="day days1" ion-col col-2 col-sm *ngIf="organ.name == 'lungs'">
+                            <img src="../assets/img/status/{{organ.name}}_orange.svg"/>
+                    </div>
+                    <div class="day days1" ion-col col-2 col-sm *ngIf="organ.name != 'lungs'">
                             <img src="../assets/img/status/{{organ.name}}_red.svg"/>
-                            <span>Gisteren</span>
                     </div>
-                    <div class="day today">
+                    <div class="day today" ion-col col-2 col-sm>
                             <img src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg"/>
-                            <span>Vandaag</span>
+                            <div>Vandaag</div>
                     </div>
-                    <div class="day days1">
-                            <img src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg"/>
-                            <span>Morgen</span>
-                    </div>
-                    <div class="day days2">
+                    <div class="day days1" ion-col col-2 col-sm *ngIf="organ.name == 'heart'">
                             <img src="../assets/img/status/{{organ.name}}_green.svg"/>
-                            <span>Overmorgen</span>
+                    </div>
+                    <div class="day days1" ion-col col-2 col-sm *ngIf="organ.name == 'lungs'">
+                            <img src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg"/>
+                    </div>
+                    <div class="day days2" ion-col col-2 col-sm *ngIf="organ.name == 'lungs'">
+                            <img src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg"/>
+                    </div>
+                    <div class="day days2" ion-col col-2 col-sm *ngIf="organ.name != 'lungs'">
+                            <img src="../assets/img/status/{{organ.name}}_green.svg"/>
+                            <div>Overmorgen</div>
                     </div>
                 </div>
             </ion-col>
         </ion-row>
         <ion-row *ngIf="organ.id">
             <ion-col col-12 col-sm>
-                <ion-card class="organ-card organ-questions">
+                <!-- <ion-card class="organ-card organ-questions">
                     <ion-card-content>
                         <h2 class="card-title">Vragen</h2>
-                        <p>Vertel ons relevante informatie om ons te helpen in het vinden van het probleem.</p>
+                        <small>Vertel ons relevante informatie om ons te helpen in het vinden van het probleem.</small>
                     </ion-card-content>
                     <ion-list>
                         <ion-item>
@@ -52,27 +59,52 @@ x
                             </ion-range>
                         </ion-item>
                     </ion-list>
-                </ion-card>
+                </ion-card> -->
                 <ion-card class="organ-card organ-measurements">
                     <ion-card-content>
                         <h2 class="card-title">Metingen</h2>
-                        <p>Onze metingen waarop wij uw gezondheid bepalen.</p>
+                        <!-- <small>Metingen</small> -->
                     </ion-card-content>
                     <ion-list>
                         <ion-item *ngFor="let parameter of organ.parameters">
-                            <ion-icon item-left name="{{parameter.icon}}"></ion-icon>
+                            <!-- <ion-icon item-left name="{{parameter.icon}}"></ion-icon> -->
                             <h3>{{parameter.alias}}</h3>
                                 <div id="container" style="display: block;"	></div>
-                            <ion-note item-right>{{parameter.measurements[2].value}}</ion-note>
+                            <ion-note item-right class="{{parameter.measurements[2].color}}">{{parameter.measurements[2].text}}</ion-note>
+                        </ion-item>
+                    </ion-list>
+                </ion-card>
+                <ion-card class="organ-card organ-treatments" *ngIf="organ.name == 'lungs'">
+                    <ion-card-content>
+                        <h2 class="card-title">Behandeling</h2>
+                        <!-- <small>Metingen</small> -->
+                    </ion-card-content>
+                    <ion-list>
+                        <ion-item>
+                            <ion-note item-left><ion-icon item-left name="flask"></ion-icon>Antibiotica is verhoogd</ion-note>
+                        </ion-item>
+                    </ion-list>
+                </ion-card>
+                <ion-card class="organ-card organ-advices" *ngIf="organ.name == 'lungs'">
+                    <ion-card-content>
+                        <h2 class="card-title">Adviezen</h2>
+                        <!-- <small>Metingen</small> -->
+                    </ion-card-content>
+                    <ion-list>
+                        <ion-item>
+                            <ion-note item-left><ion-icon item-left name="walk"></ion-icon>Ademhalingsoefeningen doen</ion-note>
+                        </ion-item>
+                        <ion-item>
+                            <ion-note item-left><ion-icon item-left name="body"></ion-icon>Bewegen met fysiotherapeut</ion-note>
                         </ion-item>
                     </ion-list>
                 </ion-card>
             </ion-col>
-            <ion-col col-12 col-sm>
+            <!-- <ion-col col-12 col-sm>
                 <ion-card class="organ-card organ-treatment">
                     <ion-card-content>
                         <h2 class="card-title">Behandelingen</h2>
-                        <p>Voer deze adviezen uit om uw prognoses te verbeteren.</p>
+                        <small>Voer deze adviezen uit om uw prognoses te verbeteren.</small>
                     </ion-card-content>
                     <ion-list>
                         <ion-item>
@@ -85,7 +117,7 @@ x
                 <ion-card class="organ-card organ-advice">
                         <ion-card-content>
                             <h2 class="card-title">Adviezen</h2>
-                            <p>Voer deze adviezen uit om uw prognoses te verbeteren.</p>
+                            <small>Voer deze adviezen uit om uw prognoses te verbeteren.</small>
                         </ion-card-content>
                         <ion-list>
                             <ion-item>
@@ -98,7 +130,7 @@ x
                 <ion-card class="organ-card organ-information">
                     <ion-card-content>
                         <h2 class="card-title">Informatie</h2>
-                        <p>Voer deze adviezen uit om uw prognoses te verbeteren.</p>
+                        <small>Voer deze adviezen uit om uw prognoses te verbeteren.</small>
                     </ion-card-content>
                     <ion-list>
                         <ion-item>
@@ -108,7 +140,7 @@ x
                         </ion-item>
                     </ion-list>
                 </ion-card>
-            </ion-col>
+            </ion-col> -->
         </ion-row>        
     </ion-grid>
 </ion-content>

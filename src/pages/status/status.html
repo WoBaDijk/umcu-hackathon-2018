@@ -3,12 +3,19 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>UrStatus</ion-title>
+        <ion-title><img class="logo" src="assets/img/umcu-logo-icon-white.png"/></ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content>
-    <ion-item *ngFor="let d of diseases; let i=index" 
+    <!-- <div class="status-overlay" padding [hidden]="overlayHidden">
+        <p>Verwachte ontslagdatum:</p>
+        <h3>25 april 2018</h3>
+        <button ion-button large>Verwachte ontslagdatum:<br />25 april 2018</button>
+        <p>test</p>
+        <button full (click)="hideOverlay()">Click me</button>
+    </div> -->
+    <!-- <ion-item *ngFor="let d of diseases; let i=index" 
         text-wrap (click)="toggleGroup(i)" 
         [ngClass]="{active: isGroupShown(i)}">
         
@@ -27,9 +34,17 @@
                     <li style="color:#F6921E"><small>Lage bloeddruk</small></li>
                 </ul>
         </div>
-    </ion-item>
+    </ion-item> -->
 
     <ion-grid>
+        <ion-row>
+            <ion-col col-12 col-sm>
+                <div class="resignationDate">
+                    Verwachte ontslagdatum:
+                    <strong>1 mei 2018</strong>
+                </div>
+            </ion-col>
+        </ion-row>        
         <ion-row>
             <ion-col col-12 col-sm>
                 <div class="status-body-box">

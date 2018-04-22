@@ -5,8 +5,8 @@ let organs: Array<any> = [
         alias: "Hersenen",
         status: 70,
         boundaries: {
-            lower: 30,
-            upper: 80
+            lower: -1,
+            upper: -1
         },
         parameters: [
             {
@@ -14,8 +14,8 @@ let organs: Array<any> = [
                 alias: "Mate van gestoord zijn",
                 icon: "logo-freebsd-devil",
                 boundaries: {
-                    lower: 3,
-                    upper: 10
+                    lower: -1,
+                    upper: -1
                 },
                 measurements: [
                     {
@@ -38,10 +38,10 @@ let organs: Array<any> = [
         id: 2,
         name: "heart",
         alias: "Hart",
-        status: 100,
+        status: 50,
         boundaries: {
             lower: 30,
-            upper: 80
+            upper: 70
         },
         parameters: [
             {
@@ -49,8 +49,8 @@ let organs: Array<any> = [
                 alias: "Hartslag",
                 icon: "logo-freebsd-devil",
                 boundaries: {
-                    lower: 45,
-                    upper: 150
+                    lower: -1,
+                    upper: -1
                 },
                 measurements: [
                     {
@@ -60,6 +60,113 @@ let organs: Array<any> = [
                     {
                         datetime: "1994-13-15T14:47",
                         value: 30
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 80,
+                        text: "Hoog",
+                        color: "warning"
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 80
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 80
+                    }
+                ]
+            },
+            {
+                name: "rythm",
+                alias: "Hartritme",
+                icon: "logo-freebsd-devil",
+                boundaries: {
+                    lower: -1,
+                    upper: -1
+                },
+                measurements: [
+                    {
+                        datetime: "1994-12-15T13:47",
+                        value: 50
+                    },
+                    {
+                        datetime: "1994-13-15T14:47",
+                        value: 30
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 80,
+                        text: "Goed"
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 80
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 80
+                    }
+                ]
+            },
+            {
+                name: "nibp",
+                alias: "Bloeddruk",
+                icon: "logo-freebsd-devil",
+                boundaries: {
+                    lower: -1,
+                    upper: -1
+                },
+                measurements: [
+                    {
+                        datetime: "1994-12-15T13:47",
+                        value: 50
+                    },
+                    {
+                        datetime: "1994-13-15T14:47",
+                        value: 30
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 80,
+                        text: "Normaal"
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 80
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 80
+                    }
+                ]
+            },
+            {
+                name: "troponine",
+                alias: "Hart enzymen",
+                icon: "logo-freebsd-devil",
+                boundaries: {
+                    lower: -1,
+                    upper: -1
+                },
+                measurements: [
+                    {
+                        datetime: "1994-12-15T13:47",
+                        value: 50
+                    },
+                    {
+                        datetime: "1994-13-15T14:47",
+                        value: 30
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 80,
+                        text: "Licht verhoogd",
+                        color: "warning"
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 80
                     },
                     {
                         datetime: "1994-14-15T15:47",
@@ -73,19 +180,19 @@ let organs: Array<any> = [
         id: 3,
         name: "lungs",
         alias: "Luchtwegen",
-        status: 70,
+        status: 20,
         boundaries: {
             lower: 30,
-            upper: 80
+            upper: 70
         },
         parameters: [
             {
-                name: "sigarets",
-                alias: "Aantal sigaretten",
+                name: "abtibiotics",
+                alias: "Antibioticaspiegel",
                 icon: "no-smoking",
                 boundaries: {
-                    lower: 30,
-                    upper: 70
+                    lower: -1,
+                    upper: -1
                 },
                 measurements: [
                     {
@@ -94,11 +201,99 @@ let organs: Array<any> = [
                     },
                     {
                         datetime: "1994-13-15T14:47",
-                        value: 80
+                        value: 20
                     },
                     {
                         datetime: "1994-14-15T15:47",
-                        value: 11
+                        value: 20,
+                        text: "Laag",
+                        color: "danger"
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 20,
+                        text: "Laag",
+                        color: "danger"
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 20,
+                        text: "Laag",
+                        color: "danger"
+                    }
+                ]
+            },
+            {
+                name: "breathing",
+                alias: "Ademhaling",
+                icon: "no-smoking",
+                boundaries: {
+                    lower: -1,
+                    upper: -1
+                },
+                measurements: [
+                    {
+                        datetime: "1994-12-15T13:47",
+                        value: 40
+                    },
+                    {
+                        datetime: "1994-13-15T14:47",
+                        value: 20
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 40,
+                        text: "Snel",
+                        color: "danger"
+                    }
+                ]
+            },
+            {
+                name: "po2",
+                alias: "Zuurstof",
+                icon: "no-smoking",
+                boundaries: {
+                    lower: -1,
+                    upper: -1
+                },
+                measurements: [
+                    {
+                        datetime: "1994-12-15T13:47",
+                        value: 40
+                    },
+                    {
+                        datetime: "1994-13-15T14:47",
+                        value: 20
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 20,
+                        text: "Laag",
+                        color: "danger"
+                    }
+                ]
+            },
+            {
+                name: "pco2",
+                alias: "Koolzuur",
+                icon: "no-smoking",
+                boundaries: {
+                    lower: -1,
+                    upper: -1
+                },
+                measurements: [
+                    {
+                        datetime: "1994-12-15T13:47",
+                        value: 40
+                    },
+                    {
+                        datetime: "1994-13-15T14:47",
+                        value: 20
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 30,
+                        text: "Normaal"
                     }
                 ]
             }
@@ -110,8 +305,8 @@ let organs: Array<any> = [
         alias: "Lever",
         status: 70,
         boundaries: {
-            lower: 30,
-            upper: 80
+            lower: -1,
+            upper: -1
         },
         parameters: [
             {
@@ -119,8 +314,8 @@ let organs: Array<any> = [
                 alias: "Aantal biertjes",
                 icon: "beer",
                 boundaries: {
-                    lower: 7,
-                    upper: 15
+                    lower: -1,
+                    upper: -1
                 },
                 measurements: [
                     {
@@ -137,6 +332,22 @@ let organs: Array<any> = [
                     }
                 ]
             }
+        ],
+        treatments: [
+            {
+                id: 1,
+                title: "Antibiotica is verhoogd"
+            }
+        ],
+        advices: [
+            {
+                id: 1,
+                title: "Bewegen met fysiotherapeut"
+            },
+            {
+                id: 2,
+                title: "Ademhalingsoefeningen doen"
+            }
         ]
     },
     {
@@ -145,8 +356,8 @@ let organs: Array<any> = [
         alias: "Darmen",
         status: 20,
         boundaries: {
-            lower: 30,
-            upper: 80
+            lower: -1,
+            upper: -1
         }
     },
     {
@@ -155,8 +366,28 @@ let organs: Array<any> = [
         alias: "Alveesklier",
         status: 70,
         boundaries: {
-            lower: 30,
-            upper: 80
+            lower: -1,
+            upper: -1
+        }
+    },
+    {
+        id: 7,
+        name: "kidney_r",
+        alias: "Rechter nier",
+        status: 70,
+        boundaries: {
+            lower: -1,
+            upper: -1
+        }
+    },
+    {
+        id: 8,
+        name: "kidney_l",
+        alias: "Linker nier",
+        status: 70,
+        boundaries: {
+            lower: -1,
+            upper: -1
         }
     }
 ];

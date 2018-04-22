@@ -43,7 +43,7 @@ export class MyApp {
         this.appMenuItems = [
             {title: 'Mijn opname', component: GeneralPage, icon: 'person'},
             {title: 'Status', component: StatusPage, icon: 'pulse'},
-            {title: 'Detail', component: DetailPage, icon: 'medkit'},
+            // {title: 'Detail', component: DetailPage, icon: 'medkit'},
             {title: 'Behandelingen', component: PropertyListPage, icon: 'medkit'},
             {title: 'Adviezen', component: PropertyListPage, icon: 'text'},
         ];
