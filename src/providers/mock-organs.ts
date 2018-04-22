@@ -224,6 +224,43 @@ let organs: Array<any> = [
                 ]
             },
             {
+                name: "crp",
+                alias: "Ontstekingseiwitten",
+                icon: "no-smoking",
+                boundaries: {
+                    lower: -1,
+                    upper: -1
+                },
+                measurements: [
+                    {
+                        datetime: "1994-12-15T13:47",
+                        value: 40
+                    },
+                    {
+                        datetime: "1994-13-15T14:47",
+                        value: 20
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 20,
+                        text: "Hoog",
+                        color: "danger"
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 20,
+                        text: "Hoog",
+                        color: "danger"
+                    },
+                    {
+                        datetime: "1994-14-15T15:47",
+                        value: 20,
+                        text: "Hoog",
+                        color: "danger"
+                    }
+                ]
+            },
+            {
                 name: "breathing",
                 alias: "Ademhaling",
                 icon: "no-smoking",
@@ -244,7 +281,7 @@ let organs: Array<any> = [
                         datetime: "1994-14-15T15:47",
                         value: 40,
                         text: "Snel",
-                        color: "danger"
+                        color: "warning"
                     }
                 ]
             },
