@@ -1,4 +1,4 @@
-.blank-header {
+.detailpage-header {
   background-color: #434954;
   padding: 16px;
   width: 100%;
@@ -6,24 +6,24 @@
   text-align: center;
 }
 
-.blank-header img {
+.detailpage-header img {
   max-width: 200px;
   min-height: 115px;
   margin-left: -15px;
   padding: 25px 0 20px 0;
 }
 
-.blank-info p {
+.detailpage-info p {
   color: #697072;
   text-align: left;
 }
 
-.blank-info ion-icon {
+.detailpage-info ion-icon {
   color: color($colors, primary);
   width: 20px;
 }
 
-.blank-body-box {
+.detailpage-body-box {
   position: relative;
   width: 100%;
   margin: 0px;
@@ -31,56 +31,56 @@
   border: 1px solid #000000;
 }
 
-.blank-bodyparts-brain {
+.detailpage-bodyparts-brain {
   position: absolute;
   left: 41%;
   top: 1.5%;
   width: 18%
 }
 
-.blank-bodyparts-lungs {
+.detailpage-bodyparts-lungs {
   position: absolute;
   left: 33.5%;
   top: 15%;
   width: 33%;
 }
 
-.blank-bodyparts-heart {
+.detailpage-bodyparts-heart {
   position: absolute;
   left: 43%;
   top: 26%;
   width: 13%
 }
 
-.blank-bodyparts-liver {
+.detailpage-bodyparts-liver {
   position: absolute;
   left: 36%;
   top: 34%;
   width: 20%
 }
 
-.blank-bodyparts-pancreas {
+.detailpage-bodyparts-pancreas {
   position: absolute;
   left: 48%;
   top: 37%;
   width: 16%
 }
 
-.blank-bodyparts-kidney_r {
+.detailpage-bodyparts-kidney_r {
   position: absolute;
   left: 35%;
   top: 41%;
   width: 8%
 }
 
-.blank-bodyparts-kidney_l {
+.detailpage-bodyparts-kidney_l {
   position: absolute;
   left: 57%;
   top: 41%;
   width: 8%
 }
 
-.blank-bodyparts-gastrointestinal {
+.detailpage-bodyparts-gastrointestinal {
   position: absolute;
   left: 37%;
   top: 47%;
@@ -89,16 +89,20 @@
 
 .md,
 .wp {
-  .blank-info [text-right] {
+  .detailpage-info [text-right] {
     margin-right: 0;
   }
 }
 
-.ios .blank-info {
+.ios .detailpage-info {
   text-align: center;
 }
 
-.ios .blank-info ion-icon {
+.ios .detailpage-info ion-icon {
   width: auto;
   margin-right: 10px;
+}
+
+.padleft {
+  padding-left: 40%,
 }

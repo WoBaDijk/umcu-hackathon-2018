@@ -32,4 +32,21 @@ export class StatusPage {
     this.navCtrl.push(OrganPage, organ);
     // this.navCtrl.push(OrganPage);
   }
+
+  diseases = [
+    { title: "Ontslagdatum", description: "Kritieke factoren:" },
+  ];
+
+  shownGroup = null;
+
+  toggleGroup(group) {
+    if (this.isGroupShown(group)) {
+        this.shownGroup = null;
+    } else {
+        this.shownGroup = group;
+    }
+};
+isGroupShown(group) {
+    return this.shownGroup === group;
+};
 }

@@ -19,10 +19,18 @@ export class DetailPage {
         type: 'spline'
       },
       title: {
-        text: 'Heartrate'
+        text: 'Heartrate',
+        style: {
+          fontSize: '15px',
+        },
       },
       xAxis: {
-        categories: ['Eergisteren', 'Gisteren', 'Vandaag', 'Morgen']
+        categories: ['Eergisteren', 'Gisteren', 'Vandaag', 'Morgen'],
+        labels: {
+          style: {
+              fontSize:'15px'
+          }
+        }
       },
       yAxis: {
         title: {

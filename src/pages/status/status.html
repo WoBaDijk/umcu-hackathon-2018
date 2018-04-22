@@ -3,85 +3,40 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title><img class="logo" src="assets/img/umcu-logo-icon-white.png"/></ion-title>
+        <ion-title>UrStatus</ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content>
-<!--
-    <div class="status-header">
-        <img src="assets/img/umcu-logo.png">
-    </div>
--->
+    <ion-item *ngFor="let d of diseases; let i=index" 
+        text-wrap (click)="toggleGroup(i)" 
+        [ngClass]="{active: isGroupShown(i)}">
+        
+        <div class="button">
+            <h3>Verwachte ontslagdatum: </h3>
+            <h3>Over 5 dagen</h3>
+        </div>
+        <ion-icon color="success" 
+            item-right [name]="isGroupShown(i) ? '' : ''">
+        </ion-icon>
+        <div *ngIf="isGroupShown(i)">
+                <ul>
+                    <h4>Risicofactoren:</h4>
+                    <li style="color:#EC1C24"><small>Hartritmestoornis</small></li>
+                    <li style="color:#EC1C24"><small>Verhoogde kans op longontsteking</small></li>
+                    <li style="color:#F6921E"><small>Lage bloeddruk</small></li>
+                </ul>
+        </div>
+    </ion-item>
+
     <ion-grid>
         <ion-row>
             <ion-col col-12 col-sm>
-                    <ion-card class="status-medical status-card">
-                        <ion-card-content>
-                            <h2 class="card-title"><strong>Pietje Puk</strong></h2>
-                            <p>Afdeling: B2</p>
-                        </ion-card-content>
-                        <ion-list>
-                            <ion-item>
-                                <ion-icon item-left name="body"></ion-icon>
-                                <h3>Diagnose</h3>
-                                <ion-note item-right>Nierfalen</ion-note>
-                            </ion-item>
-                            <ion-item>
-                                <ion-icon item-left name="medkit"></ion-icon>
-                                <h3>Behandeling</h3>
-                                <ion-note item-right>Niertransplantatie</ion-note>
-                            </ion-item>
-                        </ion-list>
-                    </ion-card>
-
-                    <ion-card class="status-team status-card">
-                        <ion-card-content>
-                            <h2 class="card-title">Medisch team</h2>
-                        </ion-card-content>
-                        <ion-list>
-                            <ion-item>
-                                <ion-icon item-left name="contact"></ion-icon>
-                                <h3>Zaalarts van dienst</h3>
-                                <ion-note item-right>Aaltje Arts</ion-note>
-                            </ion-item>
-                            <ion-item>
-                                <ion-icon item-left name="contacts"></ion-icon>
-                                <h3>Verpleegkundige van dienst</h3>
-                                <ion-note item-right>Zissie de Zuster</ion-note>
-                            </ion-item>
-                            <ion-item>
-                                <ion-icon item-left name="clipboard"></ion-icon>
-                                <h3>Hoofdbehandelaar</h3>
-                                <ion-note item-right>Prof, dr. dr. dr. Bert Boeman</ion-note>
-                            </ion-item>
-                            <!-- <button ion-item (click)="openBrokerDetail(property.broker)">
-                                <ion-avatar item-left>
-                                    <img src="{{property.broker.picture}}"/>
-                                </ion-avatar>
-                                <h2>{{property.broker.name}}</h2>
-                                <p>{{property.broker.title}}</p>
-                            </button> -->
-                        </ion-list>
-                    </ion-card>
-                    <!-- <ion-item>
-                        <ion-label>Pijn score</ion-label>
-                        <ion-range min="0" max="10" step="1" snaps="true" color="primary" [(ngModel)]="singleValue4">
-                                <ion-icon small range-left color="danger" name="sad"></ion-icon>
-                                <ion-icon small range-right color="safe" name="happy"></ion-icon>
-                        </ion-range>
-                    </ion-item> -->
-            </ion-col>
-            <ion-col col-12 col-sm>
-                <div class="status-box-wrapper">
-                    <H5>Klik op het orgaan wat u wilt zien:</H5>
-                    <div class="status-body-box">
-                        <img src="../assets/img/status/body.svg">
-                        <div *ngFor="let organ of organs" class="status-bodyparts-{{organ.name}} zoom"><img (click)="openOrganPage(organ)" src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg" alt="{{organ.alias}}"></div>
-                    </div>
+                <div class="status-body-box">
+                    <img src="../assets/img/status/body.svg">
+                    <div *ngFor="let organ of organs" class="status-bodyparts-{{organ.name}} zoom"><img (click)="openOrganPage(organ)" src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg" alt="{{organ.alias}}"></div>
                 </div>
             </ion-col>
         </ion-row>
-      </ion-grid>
-
+    </ion-grid>
 </ion-content>

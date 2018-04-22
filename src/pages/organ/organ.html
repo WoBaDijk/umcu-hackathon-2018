@@ -62,6 +62,7 @@ x
                         <ion-item *ngFor="let parameter of organ.parameters">
                             <ion-icon item-left name="{{parameter.icon}}"></ion-icon>
                             <h3>{{parameter.alias}}</h3>
+                                <div id="container" style="display: block;"	></div>
                             <ion-note item-right>{{parameter.measurements[2].value}}</ion-note>
                         </ion-item>
                     </ion-list>
