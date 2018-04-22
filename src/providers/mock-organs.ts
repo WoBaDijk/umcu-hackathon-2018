@@ -143,7 +143,7 @@ let organs: Array<any> = [
             },
             {
                 name: "troponine",
-                alias: "Hart enzymen",
+                alias: "Hartenzymen",
                 icon: "logo-freebsd-devil",
                 boundaries: {
                     lower: -1,
