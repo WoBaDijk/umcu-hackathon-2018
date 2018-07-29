@@ -79,12 +79,39 @@
   }
 }
 .organ-card {
-  background: #ddd;
-
+  background: #ddd;  
   h2 {
     font-weight: bold;
   }
+  svg {
+    background-color: #fff !important; 
+  }
+  #test {
+    background-color: #fff !important;
+    margin: -5px -15px -10px -15px;
+    padding: 8px 15px !important;
+    }
+  #pressure {
+    background-color: #fff !important;
+    margin: -5px -15px -10px -15px;
+    padding: 8px 15px !important;
+  }
+  p {
+    font-weight: bold;
+    .orange {
+      color: orange;
+    }
+    .darkgreen {
+      color: darkgreen;
+    }
+    .steelblue {
+      color: steelblue;
+    }
+  }
 }
+
+
+
 
 .danger {
   color: color($colors, danger) !important;
@@ -96,6 +123,7 @@
 
 ion-card-content {
   padding: 8px 15px !important;
+
 }
 
 .organ-questions {
@@ -107,7 +135,7 @@ ion-card-content {
 }
 
 .organ-info p {
-  color: #697072;
+  color: #726972;
   text-align: left;
 }
 
@@ -139,4 +167,10 @@ ion-card-content {
 .ios .organ-info ion-icon {
   width: auto;
   margin-right: 10px;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
 }

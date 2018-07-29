@@ -2,9 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { ChartsModule } from 'ng2-charts';
 
 import { MyApp } from './app.component';
 import {WelcomePage} from '../pages/welcome/welcome';
+import { BarChartPage } from '../pages/bar-chart/bar-chart';
+import { PieChartPage } from '../pages/pie-chart/pie-chart';
+import {TimeseriesPage} from '../pages/timeseries/timeseries';
 import {PropertyListPage} from '../pages/property-list/property-list';
 import {PropertyDetailPage} from '../pages/property-detail/property-detail';
 import {BrokerListPage} from '../pages/broker-list/broker-list';
@@ -30,6 +34,9 @@ import { DetailPage } from '../pages/detailpage/detailpage';
   declarations: [
     MyApp,
     WelcomePage,
+    BarChartPage,
+    PieChartPage,
+    TimeseriesPage,
     BlankPage,
     GeneralPage,
     StatusPage,
@@ -48,11 +55,15 @@ import { DetailPage } from '../pages/detailpage/detailpage';
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
+    ChartsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     WelcomePage,
+    BarChartPage,
+    PieChartPage,
+    TimeseriesPage,
     BlankPage,
     GeneralPage,
     StatusPage,

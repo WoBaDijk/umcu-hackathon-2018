@@ -186,7 +186,7 @@ let organs: Array<any> = [
             upper: 70
         },
         parameters: [
-            {
+            /* {
                 name: "abtibiotics",
                 alias: "Antibioticaspiegel",
                 icon: "no-smoking",
@@ -259,10 +259,10 @@ let organs: Array<any> = [
                         color: "danger"
                     }
                 ]
-            },
+            }, */
             {
                 name: "breathing",
-                alias: "Ademhaling",
+                alias: "Ademhaling (per minuut)",
                 icon: "no-smoking",
                 boundaries: {
                     lower: -1,
@@ -286,8 +286,8 @@ let organs: Array<any> = [
                 ]
             },
             {
-                name: "po2",
-                alias: "Zuurstof",
+                name: "satO2",
+                alias: "Saturatie (% O2)",
                 icon: "no-smoking",
                 boundaries: {
                     lower: -1,
@@ -296,23 +296,22 @@ let organs: Array<any> = [
                 measurements: [
                     {
                         datetime: "1994-12-15T13:47",
-                        value: 40
+                        value: 100
                     },
                     {
                         datetime: "1994-13-15T14:47",
-                        value: 20
+                        value: 88
                     },
                     {
                         datetime: "1994-14-15T15:47",
-                        value: 20,
-                        text: "Laag",
-                        color: "danger"
+                        value: 96,
+                        text: "Normaal",
                     }
                 ]
             },
             {
-                name: "pco2",
-                alias: "Koolzuur",
+                name: "etCO2",
+                alias: "End-tidal CO2 (mm Hg)",
                 icon: "no-smoking",
                 boundaries: {
                     lower: -1,
@@ -329,8 +328,9 @@ let organs: Array<any> = [
                     },
                     {
                         datetime: "1994-14-15T15:47",
-                        value: 30,
-                        text: "Normaal"
+                        value: 35,
+                        text: "Laag-Normaal",
+                        color: "warning"
                     }
                 ]
             }

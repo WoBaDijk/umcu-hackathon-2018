@@ -13,7 +13,7 @@ export class DetailPage {
   }
 
 // > 150 heartrate == rood
-  ionViewDidLoad() {
+/*   ionViewDidLoad() {
     var myChart = HighCharts.chart('container', {
       chart: {
         type: 'spline'
@@ -78,5 +78,5 @@ export class DetailPage {
       ]},
       ]
     });
-  }
+  } */
 }

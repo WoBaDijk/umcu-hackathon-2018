@@ -48,8 +48,8 @@
         <ion-row>
             <ion-col col-12 col-sm>
                 <div class="status-body-box">
-                    <img src="../assets/img/status/body.svg">
-                    <div *ngFor="let organ of organs" class="status-bodyparts-{{organ.name}} zoom"><img (click)="openOrganPage(organ)" src="../assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg" alt="{{organ.alias}}"></div>
+                    <img src="assets/img/status/body.svg">
+                    <div *ngFor="let organ of organs" class="status-bodyparts-{{organ.name}} zoom"><img (click)="openOrganPage(organ)" src="assets/img/status/{{organ.name}}_{{evaluateOrganColor(organ.status, organ.boundaries.lower, organ.boundaries.upper)}}.svg" alt="{{organ.alias}}"></div>
                 </div>
             </ion-col>
         </ion-row>
