@@ -1,0 +1,177 @@
+
+
+
+
+// PROBEERSELS
+
+  initSvg() {
+
+    this.svg = d3.select("#graph")
+        .append("svg")
+        .attr("width", '100%')  
+        .attr("height", '100%')
+        .attr('viewBox','0 0 500 200');
+    this.g = this.svg.append("g")
+        .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
+  }
+
+  initAxis() {
+    this.x = d3Scale.scaleBand().rangeRound([0, this.width]).padding(0.1);
+    this.y = d3Scale.scaleLinear().rangeRound([this.height, 0]);
+    this.x.domain(LineChart.map((d) => d.date));
+    this.y.domain([0, d3Array.max(LineChart, (d) => d.close)]);
+  }
+
+  drawAxis() {
+    this.g.append("g")
+        .attr("class", "axis axis--x")
+        .attr("transform", "translate(0," + this.height + ")")
+        .call(d3Axis.axisBottom(this.x));
+    this.g.append("g")
+        .attr("class", "axis axis--y")
+        .call(d3Axis.axisLeft(this.y))
+        .append("text")
+        .attr("class", "axis-title")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", "0.71em")
+        .attr("text-anchor", "end")
+        .text("Close");
+  }
+
+  drawLines() {
+ this.g.selectAll(".bar")
+        .data(LineChart)
+        .enter().append("path")
+        .attr("class", "line")
+        .attr("x", (d) => this.x(d.date) )
+        .attr("y", (d) => this.y(d.close) )
+        .attr("width", this.x.bandwidth())
+        .attr("height", (d) => this.height - this.y(d.close) );
+  }
+
+  drawaLine() {
+/*     var valueline = d3Shape.line()
+    .x((d) => this.x(d.date))
+    .y((d) => this.y(d.close) }); */
+    
+
+    var line:Array<any> = [[1], [2], [3], [4], [5]];
+    var xBreedte = line.length
+    var linegenerator = d3Shape.line();
+    var pathString = linegenerator(line);
+
+    this.svg.append("path")
+        .data([LineChart])
+        .attr("class", "line")
+        .attr("d", pathString)
+    console.log(xBreedte)
+  }
+
+  firstGraph() {
+
+    // set variables
+    var margin = {top: 20, right: 20, bottom: 30, left: 50};
+    var width = 960 - margin.left - margin.right;
+    var height = 500 - margin.top - margin.bottom;
+
+    // parse the time/date
+    var parsetime = d3Timeformat.timeParse("%d-%b-%y");
+
+    // set the ranges
+    var x = d3Scale.scaleTime().range([0, width]);
+    var y = d3Scale.scaleLinear().range([height, 0]);
+
+    // define the line
+    var valueline = d3Shape.line()
+    .x(function(d) { return x(this.myPoint); })
+    .y(function(d) { return y(this.myPoint); });
+    
+    // append the svg object to the body of the page
+    // appends a 'group' element to 'svg'
+    // moves the 'group' element to the top left margin
+    var svg = d3.select("graph").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+      .style("border", "1px solid black");
+
+// Get and format the data
+/* interface test {
+  date: Date;
+  close: number;
+} */
+
+var myPoint:Array<any> = [];
+
+d3Fetch
+    .csv("assets/data/data.csv")
+    .then((data) => {
+      data.forEach(function(d) {
+        var correctdate:Date
+        var values:number
+      
+        correctdate = (parsetime(d.date));
+        values = (+d.close)
+        myPoint = [...myPoint,{date: correctdate, close: values}] 
+      })
+
+    
+  // Scale the range of the data
+  x.domain(d3Array.extent(myPoint, function(d) { return d; }));
+  y.domain([0, d3Array.max(myPoint, function(d) { return d; })]);
+
+  console.log('def2 myPoint', myPoint);
+
+  // Add the valueline path.
+/*    svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .attr("d", this.valueline); */
+
+  // Add the X Axis
+  svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3Axis.axisBottom(x));
+
+  // Add the Y Axis
+  svg.append("g")
+      .call(d3Axis.axisLeft(y));  
+  
+    });
+  }
+
+  initInterface() {
+    
+    /* var myPoint:Array<any> = [{date: new Date('01-01-01'), close: 2},
+                              {date: new Date('02-01-01'), close: 3}];
+    myPoint = [...myPoint,{date: new Date('03-01-01'), close: 4} ]
+    console.log(myPoint); */
+  }
+
+
+  initTest() {
+    this.svg = d3.select("#graph")
+      .append("svg")
+      .attr("width", 200)
+      .attr("height", 200)
+      .style("border", "1px solid black")
+
+      .selectAll("circle")
+      .data(this.circleRadii)
+      .enter()
+      .append("circle")
+      .attr("cx", 50)
+      .attr("cy", 50)
+      .attr("r", (d: number) => {return this.i + d;}) 
+      .style("fill", (d: number) => {
+        if (d === 40) { this.returnColor = "green"; }
+        else if (d === 20) { this.returnColor = "red"; }
+        else if (d === 10) { this.returnColor = "purple"; }
+        return this.returnColor;
+      });
+    console.log(this.i)
+    }
+
+}

@@ -19,9 +19,11 @@ export class OrganService {
   }
 
   evaluateOrganColor(status, lower, upper) {
+    if(lower == -1 && upper == -1) return "grey";
+
     if(status > upper) return "green";
     else if(status > lower) return "orange";
-    else if(status <= lower) return "red";
-    else return "grey";
+    else if(status <= lower)return "red";
+    else return "grey"; 
   }
 }

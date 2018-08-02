@@ -1,0 +1,108 @@
+.detailpage-header {
+  background-color: #434954;
+  padding: 16px;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+}
+
+.detailpage-header img {
+  max-width: 200px;
+  min-height: 115px;
+  margin-left: -15px;
+  padding: 25px 0 20px 0;
+}
+
+.detailpage-info p {
+  color: #697072;
+  text-align: left;
+}
+
+.detailpage-info ion-icon {
+  color: color($colors, primary);
+  width: 20px;
+}
+
+.detailpage-body-box {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  padding: 0px; 
+  border: 1px solid #000000;
+}
+
+.detailpage-bodyparts-brain {
+  position: absolute;
+  left: 41%;
+  top: 1.5%;
+  width: 18%
+}
+
+.detailpage-bodyparts-lungs {
+  position: absolute;
+  left: 33.5%;
+  top: 15%;
+  width: 33%;
+}
+
+.detailpage-bodyparts-heart {
+  position: absolute;
+  left: 43%;
+  top: 26%;
+  width: 13%
+}
+
+.detailpage-bodyparts-liver {
+  position: absolute;
+  left: 36%;
+  top: 34%;
+  width: 20%
+}
+
+.detailpage-bodyparts-pancreas {
+  position: absolute;
+  left: 48%;
+  top: 37%;
+  width: 16%
+}
+
+.detailpage-bodyparts-kidney_r {
+  position: absolute;
+  left: 35%;
+  top: 41%;
+  width: 8%
+}
+
+.detailpage-bodyparts-kidney_l {
+  position: absolute;
+  left: 57%;
+  top: 41%;
+  width: 8%
+}
+
+.detailpage-bodyparts-gastrointestinal {
+  position: absolute;
+  left: 37%;
+  top: 47%;
+  width: 24%
+}
+
+.md,
+.wp {
+  .detailpage-info [text-right] {
+    margin-right: 0;
+  }
+}
+
+.ios .detailpage-info {
+  text-align: center;
+}
+
+.ios .detailpage-info ion-icon {
+  width: auto;
+  margin-right: 10px;
+}
+
+.padleft {
+  padding-left: 40%,
+}

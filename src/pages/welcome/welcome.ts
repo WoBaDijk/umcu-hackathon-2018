@@ -1,6 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import {NavController, Platform, Slides} from 'ionic-angular';
-import {BlankPage} from '../blank/blank';
+import {StatusPage} from '../status/status';
 
 @Component({
     selector: 'page-welcome',
@@ -14,7 +14,7 @@ export class WelcomePage {
     openApp() {
         // Reset the content nav to have just this page
         // we wouldn't want the back button to show in this scenario
-        this.navCtrl.setRoot(BlankPage);
+        this.navCtrl.setRoot(StatusPage);
     }
 
     isMobileDevice(){

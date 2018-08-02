@@ -14,6 +14,8 @@ export class StatusPage {
   organs: Array<any>;
   searchKey: string = "";
 
+  overlayHidden: boolean = false;
+
   constructor(public navCtrl: NavController, public organService: OrganService,) {
     this.findAllOrgans();
   }
@@ -32,4 +34,22 @@ export class StatusPage {
     this.navCtrl.push(OrganPage, organ);
     // this.navCtrl.push(OrganPage);
   }
+
+  hideOverlay() {
+    this.overlayHidden = true;
+  }
+
+  diseases = [
+    { title: "Ontslagdatum", description: "Kritieke factoren:" },
+  ];
+
+  shownGroup = null;
+  toggleGroup(group) {
+    if (this.isGroupShown(group)) this.shownGroup = null;
+    else this.shownGroup = group;
+  };
+
+  isGroupShown(group) {
+      return this.shownGroup === group;
+  };
 }

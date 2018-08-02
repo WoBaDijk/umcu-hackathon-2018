@@ -13,6 +13,9 @@ import {OrganPage} from '../pages/organ/organ';
 import {TreatmentPage} from '../pages/treatment/treatment';
 import {AdvicePage} from '../pages/advice/advice';
 import {AboutPage} from '../pages/about/about';
+import {DetailPage} from '../pages/detailpage/detailpage';
+import { BarChartPage } from '../pages/bar-chart/bar-chart';
+import { TimeseriesPage } from '../pages/timeseries/timeseries';
 
 export interface MenuItem {
     title: string;
@@ -42,8 +45,11 @@ export class MyApp {
         this.appMenuItems = [
             {title: 'Mijn opname', component: GeneralPage, icon: 'person'},
             {title: 'Status', component: StatusPage, icon: 'pulse'},
-            {title: 'Behandelingen', component: TreatmentPage, icon: 'medkit'},
-            {title: 'Adviezen', component: AdvicePage, icon: 'text'},
+            // {title: 'Detail', component: DetailPage, icon: 'medkit'},
+/*             {title: 'Behandelingen', component: TreatmentPage, icon: 'medkit'},
+            {title: 'Adviezen', component: PropertyListPage, icon: 'text'},
+            {title: 'Bar-chart', component: BarChartPage, icon: 'chart'},
+            {title: 'Timeseries', component: TimeseriesPage, icon: 'medkit'}, */
         ];
 
         this.backupMenuItems = [

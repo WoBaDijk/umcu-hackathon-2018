@@ -1,0 +1,40 @@
+.stay-header {
+  background-color: #434954;
+  padding: 16px;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+}
+
+.stay-header img {
+  max-width: 200px;
+  min-height: 115px;
+  margin-left: -15px;
+  padding: 25px 0 20px 0;
+}
+
+.stay-info p {
+  color: #697072;
+  text-align: left;
+}
+
+.stay-info ion-icon {
+  color: color($colors, primary);
+  width: 20px;
+}
+
+.md,
+.wp {
+  .stay-info [text-right] {
+    margin-right: 0;
+  }
+}
+
+.ios .stay-info {
+  text-align: center;
+}
+
+.ios .stay-info ion-icon {
+  width: auto;
+  margin-right: 10px;
+}
